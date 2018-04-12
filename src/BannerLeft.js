@@ -19,6 +19,7 @@ class BannerLeft extends Component {
        bannerClass: 'banner-cover banner-cover-click ',
        imageClass: 'left-face left-face-click'
      })
+     this.props.toggleRightImage()
      setTimeout(()=>{
       this.setState({
         showChart:true
@@ -27,26 +28,26 @@ class BannerLeft extends Component {
      $('#ps').fadeOut(1500)
      $('#ai').fadeOut(1500)
      $('#id').fadeOut(1500)
+     $('#designer').fadeOut(1500)
   }
 
+
+
   render() {
-    if(this.props.showLeftImage) {
-        
-    }
+    console.log(this.state.bannerClass+" "+this.props.hideBannerClass)
     let designChart;
     if(this.state.showChart){
       designChart = <DesignChart />
     }
-    console.log('pp',this.state.bannerClass+this.props.hideBannerClass)
+
     return (
       <div className={this.state.bannerClass+" "+this.props.hideBannerClass} onClick={this.handleClick}>
-        <div className="banner">
+          <span id="designer" className="word">Designer</span>
           <img src="images/ps.png" alt="ps" id="ps" className="image"></img>
           <img src="images/ai.png" alt="ai" id="ai" className="image"></img>
           <img src="images/id.png" alt="id" id="id" className="image"></img>
           {designChart}
-          <img src="images/left-face.png" alt="left-face" className={this.state.imageClass} ></img>
-        </div>
+          <img src="images/left-face.png" alt="left-face" className={this.state.imageClass} id="left-face"></img>
       </div>
     );
   }

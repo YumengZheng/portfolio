@@ -3,17 +3,18 @@ import './App.css';
 import Nav from './Nav.js';
 import BannerLeft from './BannerLeft.js';
 import BannerRight from './BannerRight.js';
+import $ from 'jquery';
 
 class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      showLeftImage:true,
-      showRightImage:true,
-      hideBannerClass:""
+      hideBannerClass:"",
+      hideRightBannerClass:""
     }
     this.toggleLeftImage = this.toggleLeftImage.bind(this)
     this.toggleRightImage = this.toggleRightImage.bind(this)
+    this.showLeftPage = this.showLeftPage.bind(this)
   }
 
   toggleLeftImage() {
@@ -24,7 +25,14 @@ class App extends Component {
 
   toggleRightImage() {
     this.setState({
-      showLeftImage:false
+      hideRightBannerClass:"banner-right-cover-disappear"
+    })
+  }
+
+  showLeftPage() {
+    this.setState({
+      hideBannerClass:"banner-cover-click",
+      hideRightBannerClass:"banner-right-cover-disappear"
     })
   }
 
@@ -34,7 +42,7 @@ class App extends Component {
         <Nav />
         <div className="banner">
           <BannerLeft show={this.state.showLeftImage}  toggleRightImage={this.toggleRightImage} hideBannerClass={this.state.hideBannerClass}/>
-          <BannerRight show={this.state.showRightImage} toggleLeftImage={this.toggleLeftImage} />
+          <BannerRight show={this.state.showRightImage} toggleLeftImage={this.toggleLeftImage} bannerRightCoverDisappear={this.state.hideRightBannerClass}  showLeftPage={this.showLeftPage} />
         </div>
       </div>
     );

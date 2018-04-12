@@ -1,9 +1,17 @@
 /* overall */
+
+/* body{
+  border: 1px solid green;
+  box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px
+} */
 .App {
   width: 1200px;
+  height: 1200px;
   margin: 0  auto;
   display: block;
   position: relative;
+  border: 1px solid green;
+  /* box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px */
 }
 
 .nav{
@@ -12,6 +20,15 @@
   height: 40px;
   width: 100%;
 }
+
+.banner{
+  position: relative;
+  display: flex;
+  height: 610px;
+  width: 100%;
+  border: 1px solid red;
+}
+
 /* nav bar */
 .nav-outter-box{
   display: flex;
@@ -37,31 +54,24 @@
 }
 /* banner left */
 .banner-cover{
+  display: flex;
   position: absolute;
-  height: 600px;
-  width: 49%;
-  float: left;
+  height: 100%;
+  width: 100%;
   overflow:hidden;
-  /* border: 1px solid red; */
-  -webkit-transition: width 2s;
-  transition: width 2s;
+  /* border: 1px solid yellow; */
+  -webkit-transition: clip-path 1s;
+  transition: clip-path 1s;
+  clip-path: inset(0 51% 0 0);
 }
 
 .banner-cover-click {
-  width: 100%;
+  clip-path: inset(0 0 0 0);
 }
 
 .banner-cover-disappear{
-  width: 0;
+  clip-path: inset(0 100% 0 0);
 }
-
-.banner{
-  display: flex;
-  height: 100%;
-  width: 1200px;
-  border: 1px solid red;
-}
-
 
 .image{
   display: block;
@@ -73,8 +83,7 @@
   display: block;
   margin: auto auto 0px;
   /* border: 1px solid red; */
-  z-index: 100;
-  width: 52%;
+  width: 51.8%;
   transition: 2s ease-in-out;
   -webkit-transition: 2s ease-in-out;
   -moz-transition: 2s ease-in-out;
@@ -90,23 +99,27 @@
   /* border: 1px solid red; */
 }
 
-
-
+#designer{
+  display: block;
+  font-size: 3em;
+  color: #55515B;
+  margin: 70px 0 0 110px;
+}
 #ps{
   display: block;
-  margin: 270px 0 0  220px;
+  margin: 350px 0 0  220px;
   z-index: -1;
 }
 
 #ai{
   display: block;
-  margin: 100px 0 0 40px;
+  margin: 190px 0 0 40px;
   z-index: -1;
 }
 
 #id{
   display: block;
-  margin: 400px 0 0 100px;
+  margin: 470px 0 0 100px;
   z-index: -1;
 }
 
@@ -156,13 +169,13 @@
 /* banner right */
 .banner-right-cover{
   position: absolute;
-  display: block;
-  height: 600px;
+  display: flex;
+  height: 100%;
   width: 100%;
   overflow:hidden;
-  border: 1px solid blue;
-  -webkit-transition: clip-path 2s;
-  transition: clip-path 2s;
+  /* border: 1px solid blue;  */
+  -webkit-transition: clip-path 1s;
+  transition: clip-path 1s;
   clip-path: inset(0 0 0 49%);
   /* display: none; */
 }
@@ -171,26 +184,19 @@
   clip-path: inset(0 0 0 0);
 }
 
-.banner{
-  display: flex;
-  height: 100%;
-  width: 1200px;
-  border: 1px solid red;
+.banner-right-cover-disappear{
+  clip-path: inset(0 0 0 100%);
 }
-
 
 .word{
   display: block;
   position: absolute;
-  margin: 0 0 0 80%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .right-face{
   display: block;
   margin: auto auto 0px;
-  /* border: 1px solid red; */
-  z-index: 100;
   width: 50%;
   transition: 2s ease-in-out;
   -webkit-transition: 2s ease-in-out;
@@ -207,24 +213,43 @@
   /* border: 1px solid red; */
 }
 
-#ps{
+#programmer{
   display: block;
-  margin: 270px 0 0  220px;
+  font-size: 3em;
+  color: #55515B;
+  margin: 70px 0 0 830px;
+}
+
+#mongo{
+  display: block;
+  font-size: 3.5em;
+  color: #8BE0F7;
+  margin: 280px 0 0 850px;
   z-index: -1;
 }
 
-#ai{
+#react{
   display: block;
-  margin: 100px 0 0 40px;
+  font-size: 3.2em;
+  color: #CDE0D1;
+  margin: 450px 0 0 700px;
   z-index: -1;
 }
 
-#id{
+#node{
   display: block;
-  margin: 400px 0 0 100px;
+  font-size: 2.5em;
+  color: #D5CCE5;
+  margin: 520px 0 0 800px;
   z-index: -1;
 }
 
+#arrow-right{
+  position: absolute;
+  display: block;
+  width: 10%;
+  margin: 15px 0px auto 50px;
+}
 /* left chart */
 .design-chart{
   width: 65%;

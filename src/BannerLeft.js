@@ -9,14 +9,14 @@ class BannerLeft extends Component {
     this.state = {
       bannerClass: 'banner-cover',
       imageClass: 'left-face',
-      showChart:false
+      showChart: false
     }
     this.handleClick = this.handleClick.bind(this)
   }
 
   handleClick() {
      this.setState({
-       bannerClass: 'banner-cover banner-cover-click',
+       bannerClass: 'banner-cover banner-cover-click ',
        imageClass: 'left-face left-face-click'
      })
      setTimeout(()=>{
@@ -30,12 +30,16 @@ class BannerLeft extends Component {
   }
 
   render() {
+    if(this.props.showLeftImage) {
+        
+    }
     let designChart;
     if(this.state.showChart){
       designChart = <DesignChart />
     }
+    console.log('pp',this.state.bannerClass+this.props.hideBannerClass)
     return (
-      <div className={this.state.bannerClass} onClick={this.handleClick}>
+      <div className={this.state.bannerClass+" "+this.props.hideBannerClass} onClick={this.handleClick}>
         <div className="banner">
           <img src="images/ps.png" alt="ps" id="ps" className="image"></img>
           <img src="images/ai.png" alt="ai" id="ai" className="image"></img>

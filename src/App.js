@@ -9,11 +9,14 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      hideBannerClass:"",
+      leftBannerClass: "banner-cover",
+      leftImageClass:'left-face',
+      leftShowChart:false,
+      leftShowBackground:true,
       hideRightBannerClass:""
     }
     this.toggleLeftImage = this.toggleLeftImage.bind(this)
-    this.toggleRightImage = this.toggleRightImage.bind(this)
+    this.showChartPage = this.showChartPage.bind(this)
     this.showLeftPage = this.showLeftPage.bind(this)
   }
 
@@ -23,16 +26,27 @@ class App extends Component {
     })
   }
 
-  toggleRightImage() {
+  showChartPage() {
     this.setState({
-      hideRightBannerClass:"banner-right-cover-disappear"
+      hideRightBannerClass:"banner-right-cover-disappear",
+      leftShowBackground:false,
+      leftBannerClass: 'banner-cover banner-cover-click',
+      leftImageClass: 'left-face left-face-click'
     })
+    setTimeout(() => {
+      this.setState({
+        leftShowChart:true
+      })
+    },2000)
   }
 
   showLeftPage() {
     this.setState({
-      hideBannerClass:"banner-cover-click",
-      hideRightBannerClass:"banner-right-cover-disappear"
+      leftBannerClass:"banner-cover banner-cover-click",
+      hideRightBannerClass:"banner-right-cover-disappear",
+      leftImageClass: 'left-face left-face-click',
+      leftShowBackground:false,
+      leftShowChart:true
     })
   }
 
@@ -41,8 +55,19 @@ class App extends Component {
       <div className="App">
         <Nav />
         <div className="banner">
-          <BannerLeft show={this.state.showLeftImage}  toggleRightImage={this.toggleRightImage} hideBannerClass={this.state.hideBannerClass}/>
-          <BannerRight show={this.state.showRightImage} toggleLeftImage={this.toggleLeftImage} bannerRightCoverDisappear={this.state.hideRightBannerClass}  showLeftPage={this.showLeftPage} />
+          <BannerLeft 
+          show={this.state.showLeftImage}  
+          showChartPage={this.showChartPage} 
+          leftBannerClass={this.state.leftBannerClass}
+          leftImageClass={this.state.leftImageClass}
+          leftShowChart={this.state.leftShowChart}
+          leftShowBackground={this.state.leftShowBackground}
+          />
+          <BannerRight 
+          show={this.state.showRightImage} 
+          toggleLeftImage={this.toggleLeftImage} 
+          bannerRightCoverDisappear={this.state.hideRightBannerClass}  
+          showLeftPage={this.showLeftPage} />
         </div>
       </div>
     );

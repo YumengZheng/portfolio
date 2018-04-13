@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { Component } from 'react';
 import './App.css';
 import Nav from './Nav.js';
@@ -13,38 +14,56 @@ class App extends Component {
       leftImageClass:'left-face',
       leftShowChart:false,
       leftShowBackground:true,
-      hideRightBannerClass:""
+      leftShowArrow:false,
+      leftDisplayBackground: true,
+      rightBannerClass: "banner-right-cover",
+      rightImageClass:'right-face',
+      rightShowChart:false,
+      rightShowBackground:true,
+      rightShowArrow:false,
     }
-    this.toggleLeftImage = this.toggleLeftImage.bind(this)
-    this.showChartPage = this.showChartPage.bind(this)
+    this.showRightChartPage = this.showRightChartPage.bind(this)
+    this.showLeftChartPage = this.showLeftChartPage.bind(this)
     this.showLeftPage = this.showLeftPage.bind(this)
   }
 
-  toggleLeftImage() {
+  showRightChartPage() {
     this.setState({
-      hideBannerClass:"banner-cover-disappear"
-    })
-  }
-
-  showChartPage() {
-    this.setState({
-      hideRightBannerClass:"banner-right-cover-disappear",
-      leftShowBackground:false,
-      leftBannerClass: 'banner-cover banner-cover-click',
-      leftImageClass: 'left-face left-face-click'
+      leftBannerClass:"banner-cover banner-cover-disappear",
+      rightShowBackground:false,
+      rightBannerClass: 'banner-right-cover banner-right-cover-click',
+      rightImageClass: 'right-face right-face-click'
     })
     setTimeout(() => {
       this.setState({
-        leftShowChart:true
+        rightShowChart:true,
+        rightShowArrow:true,
+        leftDisplayBackground:false
       })
-    },2000)
+    },1500)
+    $("#left-face").addClass('left-face-click')
+  }
+
+  showLeftChartPage() {
+    this.setState({
+      rightBannerClass: "banner-right-cover banner-right-cover-disappear",
+      leftShowBackground: false,
+      leftBannerClass: 'banner-cover banner-cover-click',
+      leftImageClass: 'left-face left-face-click',
+    })
+    setTimeout(() => {
+      this.setState({
+        leftShowChart:true,
+      })
+    },1500)
   }
 
   showLeftPage() {
     this.setState({
+      rightBannerClass: "banner-right-cover banner-right-cover-disappear",
+      rightShowChart: false,
+      rightShowArrow: false,
       leftBannerClass:"banner-cover banner-cover-click",
-      hideRightBannerClass:"banner-right-cover-disappear",
-      leftImageClass: 'left-face left-face-click',
       leftShowBackground:false,
       leftShowChart:true
     })
@@ -57,17 +76,25 @@ class App extends Component {
         <div className="banner">
           <BannerLeft 
           show={this.state.showLeftImage}  
-          showChartPage={this.showChartPage} 
+          showLeftChartPage={this.showLeftChartPage} 
           leftBannerClass={this.state.leftBannerClass}
           leftImageClass={this.state.leftImageClass}
           leftShowChart={this.state.leftShowChart}
           leftShowBackground={this.state.leftShowBackground}
+          leftShowArrow={this.state.leftShowArrow}
+          leftDisplayBackground={this.state.leftDisplayBackground}
           />
           <BannerRight 
           show={this.state.showRightImage} 
-          toggleLeftImage={this.toggleLeftImage} 
+          showLeftPage={this.showLeftPage} 
           bannerRightCoverDisappear={this.state.hideRightBannerClass}  
-          showLeftPage={this.showLeftPage} />
+          showRightChartPage={this.showRightChartPage} 
+          rightBannerClass={this.state.rightBannerClass}
+          rightImageClass={this.state.rightImageClass}
+          rightShowChart={this.state.rightShowChart}
+          rightShowBackground={this.state.rightShowBackground}
+          rightShowArrow={this.state.rightShowArrow}
+          />
         </div>
       </div>
     );

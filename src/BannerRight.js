@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
-import './App.css';
-import $ from 'jquery';
-import CodingChart from './CodingChart.js';
+/* eslint-disable */
+import React, { Component } from "react";
+import "./App.css";
+import $ from "jquery";
+import CodingChart from "./CodingChart.js";
 
 class BannerRight extends Component {
   constructor(props){
     super(props)
     this.state = {
-      bannerClass: 'banner-right-cover',
-      imageClass: 'right-face',
-      showChart:false,
+      clickHandleOn: true,
       showArrow:false,
-      clickHandleOn: true
+      arrowClass:'arrow-right'
     }
     this.handleClick = this.handleClick.bind(this)
     this.handleArrowClick = this.handleArrowClick.bind(this)
@@ -19,60 +18,45 @@ class BannerRight extends Component {
 
   handleClick() {
     if(this.state.clickHandleOn){
-      this.setState({
-        bannerClass: 'banner-right-cover banner-right-cover-click',
-        imageClass: 'right-face right-face-click',
-        clickHandleOn: false
-      })
-      this.props.toggleLeftImage()
-      setTimeout(()=>{
-       this.setState({
-         showChart:true,
-         showArrow:true
-       })
-      },1500)
-      $('#mongo').fadeOut(1500)
-      $('#react').fadeOut(1500)
-      $('#node').fadeOut(1500)
-      $('#programmer').fadeOut(1500)
-    //  setTimeout(()=>{
-    //   $('#ps').hide()
-    //   $('#ai').hide()
-    //   $('#id').hide()
-    //   $('#designer').hide()
-    //   $('#left-face').css({
-    //     'width':'30%',
-    //     'margin':'auto 30px 0 auto'
-    //   })
-    //  }, 1000)
+    this.props.showRightChartPage()
+    this.setState({clickHandleOn:false})
     }
  }
 
- handleArrowClick() {
+  handleArrowClick() {
     this.props.showLeftPage()
+    this.setState({
+      arrowClass: 'arrow-right arrow-right-click'
+    })
  }
 
   render() {
     let codingChart;
-    if(this.state.showChart){
+    if(this.props.rightShowChart){
       codingChart = <CodingChart />
     }
     let arrow;
-    if(this.state.showArrow){
-      arrow = <img src="images/arrow.gif" alt="arrow" id="arrow-right" onClick={this.handleArrowClick}/>
+    if(this.props.rightShowArrow){
+      arrow = <img src="images/arrow.gif" alt="arrow" id={this.state.arrowClass} onClick={this.handleArrowClick}/>
+    }
+    if(!this.props.rightShowBackground){
+      $('#mongo').fadeOut(1000)
+      $('#react').fadeOut(1000)
+      $('#node').fadeOut(1000)
+      $('#programmer').fadeOut(1000)
     }
     return (
-      <div className={this.state.bannerClass+" "+this.props.bannerRightCoverDisappear} onClick={this.handleClick}>
+      <div className={this.props.rightBannerClass} onClick={this.handleClick}>
           {arrow}
           <span id="programmer" className="word">Programmer</span>
           <span id="mongo" className="word">MongoDB</span>
           <span id="react" className="word">React.js</span>
           <span id="node" className="word">Node.js</span>
           {codingChart}
-          <img src="images/right-face.png" alt="left-face" className={this.state.imageClass} ></img>
+          <img src="images/right-face.png" alt="left-face" className={this.props.rightImageClass} ></img>
       </div>
     );
   }
 }
 
-export default BannerRight;
+export default BannerRight

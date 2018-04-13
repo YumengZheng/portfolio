@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { Component } from 'react';
 import './App.css';
 import $ from 'jquery';
@@ -10,9 +11,8 @@ class BannerLeft extends Component {
   }
 
   handleClick() {
-     this.props.showChartPage()
+     this.props.showLeftChartPage()
   }
-
 
   render() {
     let designChart;
@@ -25,12 +25,16 @@ class BannerLeft extends Component {
       $('#id').fadeOut(1500)
       $('#designer').fadeOut(1500)
     }
+    let background
+    if(this.props.leftDisplayBackground){
+      background =[<span id="designer" className="word">Designer</span>,
+                  <img src="images/ps.png" alt="ps" id="ps" className="image"></img>,
+                  <img src="images/ai.png" alt="ai" id="ai" className="image"></img>,
+                  <img src="images/id.png" alt="id" id="id" className="image"></img>]
+    }
     return (
       <div className={this.props.leftBannerClass} onClick={this.handleClick}>
-          <span id="designer" className="word">Designer</span>
-          <img src="images/ps.png" alt="ps" id="ps" className="image"></img>
-          <img src="images/ai.png" alt="ai" id="ai" className="image"></img>
-          <img src="images/id.png" alt="id" id="id" className="image"></img>
+          {background}
           {designChart}
           <img src="images/left-face.png" alt="left-face" className={this.props.leftImageClass} id="left-face"></img>
       </div>

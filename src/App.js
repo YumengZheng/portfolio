@@ -14,7 +14,6 @@ class App extends Component {
       leftImageClass:'left-face',
       leftShowChart:false,
       leftShowBackground:true,
-      leftShowArrow:false,
       leftDisplayBackground: true,
       rightBannerClass: "banner-right-cover",
       rightImageClass:'right-face',
@@ -81,7 +80,6 @@ class App extends Component {
           leftImageClass={this.state.leftImageClass}
           leftShowChart={this.state.leftShowChart}
           leftShowBackground={this.state.leftShowBackground}
-          leftShowArrow={this.state.leftShowArrow}
           leftDisplayBackground={this.state.leftDisplayBackground}
           />
           <BannerRight 

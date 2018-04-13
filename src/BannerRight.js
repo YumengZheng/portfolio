@@ -35,10 +35,6 @@ class BannerRight extends Component {
     if(this.props.rightShowChart){
       codingChart = <CodingChart />
     }
-    let arrow;
-    if(this.props.rightShowArrow){
-      arrow = <img src="images/arrow.gif" alt="arrow" id={this.state.arrowClass} onClick={this.handleArrowClick}/>
-    }
     if(!this.props.rightShowBackground){
       $('#mongo').fadeOut(1000)
       $('#react').fadeOut(1000)
@@ -47,7 +43,6 @@ class BannerRight extends Component {
     }
     return (
       <div className={this.props.rightBannerClass} onClick={this.handleClick}>
-          {arrow}
           <span id="programmer" className="word">Programmer</span>
           <span id="mongo" className="word">MongoDB</span>
           <span id="react" className="word">React.js</span>

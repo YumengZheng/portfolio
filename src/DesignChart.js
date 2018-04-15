@@ -40,7 +40,7 @@ class DesignChart extends Component {
        options={{
           maintainAspectRatio:false,
           animation: {
-            duration:4000
+            duration:1000
           },
           scales: {
             yAxes: [{

@@ -7,11 +7,17 @@ import DesignChart from './DesignChart.js';
 class BannerLeft extends Component {
   constructor(props){
     super(props)
+    this.state = {
+      clickHandleOn: true
+    }
     this.handleClick = this.handleClick.bind(this)
   }
 
   handleClick() {
-     this.props.showLeftChartPage()
+    if(this.state.clickHandleOn){
+      this.props.showLeftChartPage()
+      this.setState({clickHandleOn:false})
+      }
   }
 
   render() {

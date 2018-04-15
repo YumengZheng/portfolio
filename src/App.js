@@ -4,6 +4,7 @@ import './App.css';
 import Nav from './Nav.js';
 import BannerLeft from './BannerLeft.js';
 import BannerRight from './BannerRight.js';
+import Arrow from './Arrow.js';
 import $ from 'jquery';
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
       rightShowChart:false,
       rightShowBackground:true,
       rightShowArrow:false,
+      showArrow:false
     }
     this.showRightChartPage = this.showRightChartPage.bind(this)
     this.showLeftChartPage = this.showLeftChartPage.bind(this)
@@ -37,7 +39,8 @@ class App extends Component {
       this.setState({
         rightShowChart:true,
         rightShowArrow:true,
-        leftDisplayBackground:false
+        leftDisplayBackground:false,
+        showArrow: true
       })
     },1500)
     $("#left-face").addClass('left-face-click')
@@ -69,10 +72,15 @@ class App extends Component {
   }
 
   render() {
+    let arrow;
+    if(this.state.showArrow){
+      arrow = <Arrow showLeftPage={this.showLeftPage} />
+    }
     return (
       <div className="App">
         <Nav />
         <div className="banner">
+         {arrow}
           <BannerLeft 
           show={this.state.showLeftImage}  
           showLeftChartPage={this.showLeftChartPage} 
@@ -84,7 +92,6 @@ class App extends Component {
           />
           <BannerRight 
           show={this.state.showRightImage} 
-          showLeftPage={this.showLeftPage} 
           bannerRightCoverDisappear={this.state.hideRightBannerClass}  
           showRightChartPage={this.showRightChartPage} 
           rightBannerClass={this.state.rightBannerClass}

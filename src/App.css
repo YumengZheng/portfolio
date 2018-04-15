@@ -59,10 +59,10 @@
   height: 100%;
   width: 100%;
   overflow:hidden;
-  /* border: 1px solid yellow; */
   -webkit-transition: clip-path 1.5s;
   transition: clip-path 1.5s;
   clip-path: inset(0 51% 0 0);
+    border: 1px solid yellow;
 }
 
 .banner-cover-click {
@@ -173,11 +173,11 @@
   height: 100%;
   width: 100%;
   overflow:hidden;
-  /* border: 1px solid blue;  */
   -webkit-transition: clip-path 1.5s;
   transition: clip-path 1.5s;
   clip-path: inset(0 0 0 49%);
-  /* display: none; */
+  z-index:99;
+  border: 1px solid blue; 
 }
 
 .banner-right-cover-click {
@@ -205,7 +205,7 @@
 } 
 
 .right-face-click{
-  width: 30%;
+  width: 29%;
   transform: translate(550px,0);
   -webkit-transform: translate(550px,0); 
   -moz-transform: translate(550px,0); 
@@ -244,23 +244,29 @@
   z-index: -1;
 }
 
-#arrow-right{
-  position: absolute;
+.arrow-right{
   display: block;
+  /* position: absolute; */
   width: 10%;
-  margin:auto auto;
-  transition: 2s ease-in-out;
-  -webkit-transition: 2s ease-in-out;
-  -moz-transition: 2s ease-in-out;
-  -o-transition: 2s ease-in-out;
-  z-index: 1000;
+  margin:auto 0;
+  z-index: 100;
+  transition: 1.5s;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -o-transition: 1.5s;
+  /* border:1px solid tomato; */
 }
 
-#arrow-right-click{
-  transform: translate(-550px,0);
-  -webkit-transform: translate(-550px,0); 
-  -moz-transform: translate(-550px,0); 
-  -o-transform: translate(-550px,0);
+
+.arrow-right-click{
+  transform: translate(1080px,0);
+  -webkit-transform: translate(1080px,0); 
+  -moz-transform: translate(1080px,0); 
+  -o-transform: translate(1080px,0);
+}
+
+#arrow{
+  width: 100%;
 }
 
 /* left chart */

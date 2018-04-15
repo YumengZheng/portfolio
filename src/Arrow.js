@@ -6,22 +6,26 @@ class Arrow extends Component {
   constructor(props){
     super(props)
     this.state = {
-      arrowClass:'',
+      arrowClass:'arrow-right',
       showRightArrow: true
     }
-    this.handleClick = this.handleClick.bind(this)
+    this.handLeftArrowClick = this.handLeftArrowClick.bind(this)
   }
 
-  handleClick() {
- }
+  handLeftArrowClick(){
+    this.props.showLeftPage()
+    this.setState({
+      arrowClass:"arrow-right arrow-right-click"
+    })
+  }
 
   render() {
     let arrow;
-    if(this.state.rightArrow){
-      arrow = <img src="images/arrow.gif" alt="arrow" id={this.state.arrowClass} onClick={this.handleArrowClick}/>
+    if(this.state.showRightArrow){
+      arrow = <img src="images/arrow1.png" alt="arrow" id="arrow" />
     }
     return (
-      <div className={this.state.arrowClass} onClick={this.handleClick}>
+      <div className={this.state.arrowClass} onClick={this.handLeftArrowClick}>
           {arrow}
       </div>
     );

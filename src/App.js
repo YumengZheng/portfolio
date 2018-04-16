@@ -28,6 +28,7 @@ class App extends Component {
     this.showRightChartPage = this.showRightChartPage.bind(this)
     this.showLeftChartPage = this.showLeftChartPage.bind(this)
     this.showLeftPage = this.showLeftPage.bind(this)
+    this.showRightPage = this.showRightPage.bind(this)
   }
 
   showRightChartPage() {
@@ -45,7 +46,6 @@ class App extends Component {
         leftShowBackground:false,
         leftBannerClass:"banner-left-cover-click banner-left-move-off-screen"
       })
-      // $("#left-face").addClass('left-face-shrink')
     },1500)
     $("#left-face").addClass('left-face-shrink')
   }
@@ -80,10 +80,21 @@ class App extends Component {
     })
   }
 
+  showRightPage() {
+    this.setState({
+      leftBannerClass: "banner-left-cover banner-left-move-off-screen",
+      rightBannerClass:"banner-right-cover banner-right-cover-click banner-right-back-to-screen",
+      rightShowBackground:false,
+      rightShowChart:true,
+      leftShowArrow:false,
+      rightShowArrow:true,
+    })
+  }
   render() {
     let arrow;
     if(this.state.showArrow){
       arrow = <Arrow showLeftPage={this.showLeftPage} 
+              showRightPage={this.showRightPage} 
               leftShowArrow={this.state.leftShowArrow}
               rightShowArrow={this.state.rightShowArrow}
               />

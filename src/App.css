@@ -17,7 +17,7 @@
 .nav{
   display: flex;
   background-color:#55515B;
-  height: 40px;
+  height: 60px;
   width: 100%;
 }
 
@@ -194,6 +194,9 @@
 
 .banner-right-move-off-screen{
   margin-left:1200px; 
+}
+.banner-right-back-to-screen{
+  margin-left:0px; 
 }
 .banner-right-cover-disappear{
   clip-path: inset(0 0 0 100%);

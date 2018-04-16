@@ -39,7 +39,7 @@ class BannerRight extends Component {
           <span id="react" className="word">React.js</span>
           <span id="node" className="word">Node.js</span>
           {codingChart}
-          <img src="images/right-face.png" alt="left-face" className={this.props.rightImageClass} ></img>
+          <img src="images/right-face.png" alt="left-face" className={this.props.rightImageClass} id="right-face" ></img>
       </div>
     );
   }

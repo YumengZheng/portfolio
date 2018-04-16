@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import './App.css';
+import '../App.css';
 
 class Nav extends Component {
   render() {
@@ -13,7 +13,7 @@ class Nav extends Component {
         <div className="nav-outter-box">
           <div className="nav-inner-box">
             <span className="nav-option">About</span>
-            <span className="nav-option">Project</span>
+            <span className="nav-option">Projects</span>
             <span className="nav-option">Portfolio</span>
             <span className="nav-option">Contact</span>
           </div>

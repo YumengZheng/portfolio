@@ -1,11 +1,13 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import './App.css';
+import '../App.css';
 import Nav from './Nav.js';
 import BannerLeft from './BannerLeft.js';
 import BannerRight from './BannerRight.js';
 import Arrow from './Arrow.js';
 import $ from 'jquery';
+import LastestProject from './Projects.js'; 
+
 
 class App extends Component {
   constructor(props){
@@ -122,6 +124,7 @@ class App extends Component {
           rightShowBackground={this.state.rightShowBackground}
           />
         </div>
+        <LastestProject />
       </div>
     );
   }

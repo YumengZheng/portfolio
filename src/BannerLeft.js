@@ -39,7 +39,7 @@ class BannerLeft extends Component {
                   <img src="images/id.png" alt="id" id="id" className="image"></img>]
     }
     return (
-      <div className={this.props.leftBannerClass} onClick={this.handleClick}>
+      <div className={this.props.leftBannerClass} onClick={this.handleClick} id="left-banner">
           {background}
           {designChart}
           <img src="images/left-face.png" alt="left-face" className={this.props.leftImageClass} id="left-face"></img>

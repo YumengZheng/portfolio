@@ -44,6 +44,11 @@ class App extends Component {
       })
     },1500)
     $("#left-face").addClass('left-face-click')
+    setTimeout(()=>{
+      this.setState({
+        leftBannerClass:"banner-cover-click banner-right-face-click"
+      })
+    }, 3000);
   }
 
   showLeftChartPage() {
@@ -65,7 +70,7 @@ class App extends Component {
       rightBannerClass: "banner-right-cover banner-right-cover-disappear",
       rightShowChart: false,
       rightShowArrow: false,
-      leftBannerClass:"banner-cover banner-cover-click",
+      leftBannerClass:"banner-cover banner-cover-click banner-right-arrow-click",
       leftShowBackground:false,
       leftShowChart:true
     })

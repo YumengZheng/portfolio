@@ -71,7 +71,7 @@ class App extends Component {
 
   showLeftPage() {
     this.setState({
-      rightBannerClass: "banner-right-cover banner-right-move-off-screen",
+      rightBannerClass: "banner-right-cover banner-right-cover-click banner-right-move-off-screen",
       leftBannerClass:"banner-left-cover banner-left-cover-click banner-left-back-to-screen",
       leftShowBackground:false,
       leftShowChart:true,
@@ -82,7 +82,7 @@ class App extends Component {
 
   showRightPage() {
     this.setState({
-      leftBannerClass: "banner-left-cover banner-left-move-off-screen",
+      leftBannerClass: "banner-left-cover banner-left-cover-click banner-left-move-off-screen",
       rightBannerClass:"banner-right-cover banner-right-cover-click banner-right-back-to-screen",
       rightShowBackground:false,
       rightShowChart:true,
@@ -90,6 +90,7 @@ class App extends Component {
       rightShowArrow:true,
     })
   }
+
   render() {
     let arrow;
     if(this.state.showArrow){

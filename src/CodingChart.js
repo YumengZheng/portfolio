@@ -11,7 +11,7 @@ class DesignChart extends Component {
         labels: ["Javascript", "React", "JQuery", "Node.js", "Express.js", "mongoDB", "Postgres"],
         datasets:[
           {
-            label: 'Design Skill',
+            label: 'Coding Skill',
             data: [7, 6, 5, 3, 2, 2, 3],
             backgroundColor: [
               'rgba(255, 99, 132, 0.2)',

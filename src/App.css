@@ -11,7 +11,7 @@
   display: block;
   position: relative;
   border: 1px solid green;
-  /* box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px */
+  box-shadow:0 0 25px grey, 0 0 5px
 }
 
 .nav{
@@ -31,6 +31,17 @@
 }
 
 /* nav bar */
+.logo-box{
+  display: flex;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+.logo{
+  margin: auto auto;
+  color:white;
+}
 .nav-outter-box{
   display: flex;
   width: 50%;

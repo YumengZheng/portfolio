@@ -6,6 +6,10 @@ class Nav extends Component {
   render() {
     return (
       <div className="nav">
+        <div className="logo-box">
+          <a href="http://localhost:3000/"><img src="images/logo.png" className="logo"/></a>
+          {/* <p className="logo">Ivy Zheng</p> */}
+        </div>
         <div className="nav-outter-box">
           <div className="nav-inner-box">
             <span className="nav-option">About</span>

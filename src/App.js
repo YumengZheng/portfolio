@@ -11,16 +11,18 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      leftBannerClass: "banner-cover",
+      leftBannerClass: "banner-left-cover",
       leftImageClass:'left-face',
       leftShowChart:false,
-      leftShowBackground:true,
-      leftDisplayBackground: true,
+      leftShowBackground: true,
+      leftShowArrow:false,
+
       rightBannerClass: "banner-right-cover",
       rightImageClass:'right-face',
       rightShowChart:false,
       rightShowBackground:true,
       rightShowArrow:false,
+
       showArrow:false
     }
     this.showRightChartPage = this.showRightChartPage.bind(this)
@@ -30,39 +32,39 @@ class App extends Component {
 
   showRightChartPage() {
     this.setState({
-      leftBannerClass:"banner-cover banner-cover-disappear",
+      leftBannerClass:"banner-left-cover banner-left-cover-disappear",
       rightShowBackground:false,
       rightBannerClass: 'banner-right-cover banner-right-cover-click',
-      rightImageClass: 'right-face right-face-click'
+      rightImageClass: 'right-face right-face-shrink',
+      rightShowArrow:true
     })
     setTimeout(() => {
       this.setState({
         rightShowChart:true,
-        rightShowArrow:true,
-        leftDisplayBackground:false,
-        showArrow: true
+        showArrow: true,
+        leftShowBackground:false,
+        leftBannerClass:"banner-left-cover-click banner-left-move-off-screen"
       })
     },1500)
-    $("#left-face").addClass('left-face-click')
-    setTimeout(()=>{
-      this.setState({
-        leftBannerClass:"banner-cover-click banner-right-face-click"
-      })
-    }, 3000);
+    $("#left-face").addClass('left-face-shrink')
   }
 
   showLeftChartPage() {
     this.setState({
       rightBannerClass: "banner-right-cover banner-right-cover-disappear",
       leftShowBackground: false,
-      leftBannerClass: 'banner-cover banner-cover-click',
-      leftImageClass: 'left-face left-face-click',
+      leftBannerClass: 'banner-left-cover banner-left-cover-click',
+      leftImageClass: 'left-face left-face-shrink',
     })
     setTimeout(() => {
       this.setState({
         leftShowChart:true,
+        showArrow: true,
+        rightShowBackground:false,
+        rightBannerClass:"banner-right-cover-click banner-right-move-off-screen"
       })
-    },1500)
+    }, 1500)
+    $("#right-face").addClass('right-face-shrink')
   }
 
   showLeftPage() {
@@ -70,16 +72,21 @@ class App extends Component {
       rightBannerClass: "banner-right-cover banner-right-cover-disappear",
       rightShowChart: false,
       rightShowArrow: false,
-      leftBannerClass:"banner-cover banner-cover-click banner-right-arrow-click",
+      leftBannerClass:"banner-left-cover banner-left-cover-click banner-right-arrow-click",
       leftShowBackground:false,
-      leftShowChart:true
+      leftShowChart:true,
+      rightShowArrow:false,
+      leftShowArrow:true,
     })
   }
 
   render() {
     let arrow;
     if(this.state.showArrow){
-      arrow = <Arrow showLeftPage={this.showLeftPage} />
+      arrow = <Arrow showLeftPage={this.showLeftPage} 
+              leftShowArrow={this.state.leftShowArrow}
+              rightShowArrow={this.state.rightShowArrow}
+              />
     }
     return (
       <div className="App">
@@ -93,17 +100,14 @@ class App extends Component {
           leftImageClass={this.state.leftImageClass}
           leftShowChart={this.state.leftShowChart}
           leftShowBackground={this.state.leftShowBackground}
-          leftDisplayBackground={this.state.leftDisplayBackground}
           />
           <BannerRight 
-          show={this.state.showRightImage} 
-          bannerRightCoverDisappear={this.state.hideRightBannerClass}  
+          show={this.state.showRightImage}  
           showRightChartPage={this.showRightChartPage} 
           rightBannerClass={this.state.rightBannerClass}
           rightImageClass={this.state.rightImageClass}
           rightShowChart={this.state.rightShowChart}
           rightShowBackground={this.state.rightShowBackground}
-          rightShowArrow={this.state.rightShowArrow}
           />
         </div>
       </div>

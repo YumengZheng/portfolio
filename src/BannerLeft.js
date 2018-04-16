@@ -32,7 +32,7 @@ class BannerLeft extends Component {
       $('#designer').fadeOut(1500)
     }
     let background
-    if(this.props.leftDisplayBackground){
+    if(this.props.leftShowBackground){
       background =[<span id="designer" className="word">Designer</span>,
                   <img src="images/ps.png" alt="ps" id="ps" className="image"></img>,
                   <img src="images/ai.png" alt="ai" id="ai" className="image"></img>,

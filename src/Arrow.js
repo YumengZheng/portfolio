@@ -5,29 +5,20 @@ import "./App.css";
 class Arrow extends Component {
   constructor(props){
     super(props)
-    this.state = {
-      // arrowClass:'arrow-right',
-      showRightArrow: true,
-      showLeftArrow: false
-    }
     this.handLeftArrowClick = this.handLeftArrowClick.bind(this)
   }
 
   handLeftArrowClick(){
     this.props.showLeftPage()
-    this.setState({
-      showRightArrow: false,
-      showLeftArrow: true
-    })
   }
 
   render() {
     let rightArrow;
-    if(this.state.showRightArrow){
-      rightArrow = <img src="images/arrow1.png" alt="arrow" id="rigth-arrow" onClick={this.handLeftArrowClick}/>
+    if(this.props.rightShowArrow){
+      rightArrow = <img src="images/arrow1.png" alt="arrow" id="right-arrow" onClick={this.handLeftArrowClick}/>
     }
     let leftArrow;
-    if(this.state.showLeftArrow){
+    if(this.props.leftShowArrow){
       leftArrow = <img src="images/arrow2.png" alt="arrow" id="left-arrow" onClick={this.handRightArrowClick} />
     }
     return (

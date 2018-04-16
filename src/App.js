@@ -45,6 +45,7 @@ class App extends Component {
         leftShowBackground:false,
         leftBannerClass:"banner-left-cover-click banner-left-move-off-screen"
       })
+      // $("#left-face").addClass('left-face-shrink')
     },1500)
     $("#left-face").addClass('left-face-shrink')
   }
@@ -55,6 +56,7 @@ class App extends Component {
       leftShowBackground: false,
       leftBannerClass: 'banner-left-cover banner-left-cover-click',
       leftImageClass: 'left-face left-face-shrink',
+      leftShowArrow:true
     })
     setTimeout(() => {
       this.setState({
@@ -69,10 +71,8 @@ class App extends Component {
 
   showLeftPage() {
     this.setState({
-      rightBannerClass: "banner-right-cover banner-right-cover-disappear",
-      rightShowChart: false,
-      rightShowArrow: false,
-      leftBannerClass:"banner-left-cover banner-left-cover-click banner-right-arrow-click",
+      rightBannerClass: "banner-right-cover banner-right-move-off-screen",
+      leftBannerClass:"banner-left-cover banner-left-cover-click banner-left-back-to-screen",
       leftShowBackground:false,
       leftShowChart:true,
       rightShowArrow:false,

@@ -64,7 +64,6 @@
   transition: 1.5s;
   clip-path: inset(0 51% 0 0);
   border: 1px solid yellow;
-  z-index:99;
 }
 
 .banner-left-cover-click {
@@ -75,7 +74,7 @@
   margin-left:-1200px; 
 }
 
-.banner-right-arrow-click {
+.banner-left-back-to-screen {
   margin-left:0px; 
 }
 
@@ -183,10 +182,9 @@
   height: 100%;
   width: 100%;
   overflow:hidden;
-  -webkit-transition: clip-path 1.5s;
-  transition: clip-path 1.5s;
+  -webkit-transition: 1.5s;
+  transition: 1.5s; 
   clip-path: inset(0 0 0 49%);
-  z-index:99;
   border: 1px solid blue; 
 }
 

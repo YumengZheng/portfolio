@@ -1,14 +1,13 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import '../App.css';
+import '../styles/App.css';
 import Arrow from './Arrow.js';
 import BannerLeft from './BannerLeft.js';
 import BannerRight from './BannerRight.js';
-import LastestProject from './Projects.js'; 
 import $ from 'jquery';
 
 
-class Home extends Component {
+class Banner extends Component {
   constructor(props){
     super(props)
     this.state = {
@@ -102,7 +101,6 @@ class Home extends Component {
               />
     }
     return (
-      <div className="home">
         <div className="banner">
          {arrow}
           <BannerLeft 
@@ -122,10 +120,8 @@ class Home extends Component {
           rightShowBackground={this.state.rightShowBackground}
           />
         </div>
-        <LastestProject />
-      </div>
     );
   }
 }
 
-export default Home;
+export default Banner;

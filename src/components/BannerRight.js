@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { Component } from "react";
-import '../App.css';
+import '../styles/Banner.css';
 import $ from "jquery";
 import CodingChart from "./CodingChart.js";
 

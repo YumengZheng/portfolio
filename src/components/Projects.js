@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import '../App.css';
+import '../styles/About.css';
 import $ from 'jquery';
 
 class LastestProject extends Component {
@@ -14,9 +14,9 @@ class LastestProject extends Component {
 
   render() {
     return (
-      <div>    
-        <div className="latest-project-box">      
-          <p className="latest-project">Latest projects</p>
+      <div className="latest-project-box">    
+        <div className="latest-project-title-box">      
+          <p className="latest-project-title">Latest projects</p>
         </div>
         <div className="projects">
             <div className="project-box">

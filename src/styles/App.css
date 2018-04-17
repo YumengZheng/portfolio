@@ -1,0 +1,111 @@
+/* overall */
+
+/* body{
+  border: 1px solid green;
+  box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px
+} */
+
+/* @media screen and (max-width: 1280px)  */
+.App {
+  width: 100%;
+  height: 2000px;
+  margin: 0;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border: 1px solid green;
+  background-color: #F6F3F3;
+  /* box-shadow:0 0 25px grey, 0 0 5px */
+}
+
+.nav{
+  display: flex;
+  position: relative;
+  background-color:#55515B;
+  height: 60px;
+  width: 100%;
+}
+
+.banner{
+  position: relative;
+  display: flex;
+  height: 610px;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid red;
+}
+
+/* nav bar */
+.logo-box{
+  display: flex;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+.logo{
+  margin: auto auto;
+  color:white;
+}
+.nav-outter-box{
+  display: flex;
+  width: 50%;
+  margin-left:50%; 
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+
+.nav-inner-box{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  /* border: 1px solid red; */
+}
+.nav-option{
+  display: inline-block;
+  box-sizing: border-box;
+  width:22%;
+  color: white;
+  /* border: 1px solid red; */
+}
+
+
+/* arrow */
+.arrow{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
+}
+.right-arrow-outter-box{
+  height: 100%;
+  width: 15%;
+  float: left;
+  display: flex;
+  /* border: 1px solid blue; */
+}
+#right-arrow{
+  display: block;
+  width: 90%;
+  margin:auto auto;
+  /* border: 1px solid blue; */
+}
+.left-arrow-outter-box{
+  height: 100%;
+  width: 15%;
+  float: right;
+  display: flex;
+  /* border: 1px solid blue; */
+}
+#left-arrow{
+  display: block;
+  width: 90%;
+  margin:auto auto;
+  z-index: 100;
+  /* border: 1px solid blue; */
+}
+
+

@@ -1,0 +1,95 @@
+.about{
+  width:100%;
+  height: 1340px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border: 1px solid blue;
+}
+
+.about-part-one{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: row; 
+  border: 1px solid blue;
+}
+.about-part-one-text{
+  width: 45%;
+  margin: 5% 0 0 10%;
+  font-size: 1.5em;
+  border: 1px solid blue;
+}
+.about-part-one-image{
+  width:35%;
+  max-height:100%;
+  object-fit: contain;
+  margin-right:5%; 
+  border: 1px solid blue;
+}
+
+
+/* lastest project */
+.latest-project-box{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+}
+.latest-project-title-box{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  border: 1px solid blue;
+}
+.latest-project-title{
+  font-size: 1.5em;
+  width: auto;
+  margin: auto auto ;
+  border: 1px solid blue;
+}
+.projects{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 300px;
+  border: 1px solid blue;
+  justify-content: space-between;
+}
+
+.project-box{
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  background-color:white;
+  border-radius: 5px;
+  border: 1px solid blue;
+}
+.project-image-box{
+  width: 90%;
+  margin: 10px auto 0;
+  display: block;
+  border: 1px solid blue;
+}
+.project-image{
+  width: 100%;
+  display: block;
+  border: 1px solid blue;
+}
+.project-name{
+  display: block;
+  width: 90%;
+  margin: 15px auto;
+  border: 1px solid blue;
+}
+
+/* canvas */
+
+#canvas{
+  margin: auto auto;
+  position: absolute;
+  z-index: 1000;
+  border: 1px solid black;
+}

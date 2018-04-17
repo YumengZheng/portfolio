@@ -12,7 +12,7 @@ class Nav extends Component {
         </div>
         <div className="nav-outter-box">
           <div className="nav-inner-box">
-            <span className="nav-option">About</span>
+          <a href="http://localhost:3000/about"><span className="nav-option">About</span></a>
             <span className="nav-option">Projects</span>
             <span className="nav-option">Portfolio</span>
             <span className="nav-option">Contact</span>

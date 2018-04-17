@@ -15,9 +15,6 @@ class LastestProject extends Component {
   render() {
     return (
       <div className="latest-project-box">    
-        <div className="latest-project-title-box">      
-          <p className="latest-project-title">Latest projects</p>
-        </div>
         <div className="projects">
             <div className="project-box">
               <a href="http://pickawatermelon.com/" target="_blank" className="project-image-box"><img src="images/watermelon.png" alt="watermelon-image"  className="project-image"/></a>

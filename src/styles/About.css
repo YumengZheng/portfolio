@@ -121,12 +121,41 @@
   flex:1;
   /* border: 1px solid blue; */
 } 
-
 .about-part-four{
   font-size:1.5em;
   margin: 0 0 0 25%;
   display: block;
 }
+.about-part-five{
+  width:80%;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid blue; */
+}
+.about-part-five-image-tv{
+  width: 36%;
+  max-height: 100%;
+  object-fit: contain;
+  margin: 100px 0 0 10%;
+  /* border: 1px solid blue; */
+}
+.about-part-five-text{
+  display: block;
+  font-size: 1.5em;
+  max-height: 30%;
+  margin: 170px 0 0 10%;
+  /* border: 1px solid blue; */
+}
+.about-part-five-image-dance{
+  width: 8%;
+  height: 60%;
+  object-fit: contain;
+  margin: 50px 0 0 6% ;
+  /* border: 1px solid blue; */
+}
+
 /* canvas */
 
 #canvas{

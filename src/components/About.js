@@ -60,6 +60,20 @@ class About extends Component {
             ctx.setLineDash([5,5]);
 						ctx.moveTo(600,1060);
             ctx.lineTo(1050,1060);
+            ctx.lineTo(1050,1100);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.setLineDash([5,5]);
+						ctx.moveTo(1050,1400);
+            ctx.lineTo(1050,1650);
+            ctx.lineTo(600,1650);
+            ctx.stroke();	
+            ctx.beginPath();
+            ctx.setLineDash([5,5]);
+						ctx.moveTo(210,1650);
+            ctx.lineTo(150,1650);
+            ctx.lineTo(150,1850);
+            ctx.lineTo(600,1850);
             ctx.stroke();	
           }
 				}
@@ -83,7 +97,11 @@ class About extends Component {
         </div>
             <p className='about-part-four'>My latest design project</p>
             <LastestProject />
-
+        <div className='about-part-five'>
+            <img className='about-part-five-image-tv' src="images/tv.png" alt="bridge-image" />
+            <p className='about-part-five-text'>I like dancing</p>
+            <img className='about-part-five-image-dance' src="images/dance.png" alt="bridge-image" />
+        </div>
             <canvas id="canvas" width="1260" height="3320">fall back</canvas>
       </div>
     );

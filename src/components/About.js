@@ -98,9 +98,9 @@ class About extends Component {
             <p className='about-part-four'>My latest design project</p>
             <LastestProject />
         <div className='about-part-five'>
-            <img className='about-part-five-image-tv' src="images/tv.png" alt="bridge-image" />
+            <a href="https://www.youtube.com/watch?v=TYmfoCp1S44" target="_blank" className="about-part-five-tv-box"><img className='about-part-five-image-tv' src="images/tv.png" alt="tv-image" /></a>
             <p className='about-part-five-text'>I like dancing</p>
-            <img className='about-part-five-image-dance' src="images/dance.png" alt="bridge-image" />
+            <img className='about-part-five-image-dance' src="images/dance.png" alt="dance-image" />
         </div>
             <canvas id="canvas" width="1260" height="3320">fall back</canvas>
       </div>

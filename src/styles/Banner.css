@@ -8,7 +8,7 @@
   overflow:hidden;
   -webkit-transition: 1s;
   transition: 1s;
-  clip-path: inset(0 51% 0 0);
+  clip-path: inset(0 50.9% 0 0);
   border: 1px solid yellow;
 }
 
@@ -135,7 +135,7 @@
   overflow:hidden;
   -webkit-transition: 1.5s;
   transition: 1.5s; 
-  clip-path: inset(0 0 0 49%);
+  clip-path: inset(0 0 0 48.9%);
   border: 1px solid blue; 
   cursor: pointer;
 }

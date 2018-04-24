@@ -58,8 +58,8 @@ class BannerLeft extends Component {
   findTooltipPosition() {
     var tooltipSpan = document.getElementById('tooltip');
     window.onmousemove = function (e) {
-        var x = e.screenX,
-            y = e.screenY;
+        var x = e.clientX,
+            y = e.clientY;
             console.log(x,y)
         tooltipSpan.style.top = (y-40) + 'px';
         tooltipSpan.style.left = x + 'px';

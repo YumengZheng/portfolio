@@ -68,7 +68,7 @@ class About extends Component {
     return (
       <div className='about'>
         <div className='about-part-one'>
-            <p className='about-part-one-text'><span style={{"font-size": "2.5em"}}>I’m Ivy</span><br/>I am a software engineer based in San Francisco</p>
+            <p className='about-part-one-text'><span style={{fontSize: "2.5em"}}>I’m Ivy</span><br/>I am a software engineer based in San Francisco</p>
             <img className='about-part-one-image' src="images/bridge.png" alt="bridge-image" />
         </div>
         <p className='about-part-two-text'>My latest coding projects</p>

@@ -1,5 +1,19 @@
-/* banner left */
+/* tootip */
+.tooltip{
+  display: block;
+  color: pink;
+  position: fixed;
+  width: 200px;
+  height: 20px;
+  /* background-color: springgreen; */
+  z-index: 1000000;
+}
 
+.tooltip-none{
+  display: none;
+}
+
+/* banner left */
 .banner-left-cover{
   display: flex;
   position: absolute;
@@ -10,11 +24,11 @@
   transition: 1s;
   clip-path: inset(0 50.9% 0 0);
   border: 1px solid yellow;
+  cursor: pointer;
 }
 
 .banner-left-cover:hover{
   background-color:rgb(71, 70, 71);
-
 }
 
 .banner-left-cover-click {

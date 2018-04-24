@@ -8,9 +8,13 @@ class BannerRight extends Component {
   constructor(props){
     super(props)
     this.state = {
-      clickHandleOn: true
+      clickHandleOn: true,
+      onHover: false
     }
     this.handleClick = this.handleClick.bind(this)
+    this.handleMouseEnter = this.handleMouseEnter.bind(this)
+    this.handleMouseLeave = this.handleMouseLeave.bind(this)
+    this.controlToolTip = this.controlToolTip.bind(this)
   }
 
   handleClick() {
@@ -18,8 +22,37 @@ class BannerRight extends Component {
     this.props.showRightChartPage()
     this.setState({clickHandleOn:false})
     }
- }
+  }
 
+  handleMouseEnter(){
+    this.setState({
+      onHover: true
+    })
+  }
+
+  handleMouseLeave(){
+    this.setState({
+      onHover: false
+    })
+  }
+
+  controlToolTip(){
+    let toolTip
+    console.log('pass', this.state.onHover)
+    this.state.onHover? toolTip = 'tooltip': toolTip = 'tooltip-none'
+    console.log('pass', toolTip)
+    return <div id='tooltip2' className= {toolTip}>Click to see coding skills</div>
+  }
+  
+  findTooltipPosition() {
+    var tooltipSpan = document.getElementById('tooltip2');
+    window.onmousemove = function (e) {
+        var x = e.clientX,
+            y = e.clientY;
+        tooltipSpan.style.top = (y-40) + 'px';
+        tooltipSpan.style.left = x + 'px';
+    }
+  }
 
   render() {
     let codingChart;
@@ -32,12 +65,23 @@ class BannerRight extends Component {
       $('#node').fadeOut(1000)
       $('#programmer').fadeOut(1000)
     }
+    let findTooltipPosition
+    if(this.state.onHover){
+      findTooltipPosition = this.findTooltipPosition()
+    }
+    let fontColor
+    this.state.onHover? fontColor = {color: 'white', position: 'absolute'} : fontColor = {color: 'black'}
     return (
-      <div className={this.props.rightBannerClass} onClick={this.handleClick}>
-          <span id="programmer" className="word">Programmer</span>
+      <div className={this.props.rightBannerClass} 
+           onClick={this.handleClick}
+           onMouseEnter={this.handleMouseEnter} 
+           onMouseLeave={this.handleMouseLeave}>
+          <span id="programmer" className="word" style={fontColor}>Programmer</span>
           <span id="react" className="word">React.js</span>
           <span id="mongo" className="word">MongoDB</span>
           <span id="node" className="word">Node.js</span>
+          {this.controlToolTip()}
+          {findTooltipPosition}
           {codingChart}
           <img src="images/right-face2.png" alt="left-face" className={this.props.rightImageClass} id="right-face" ></img>
       </div>

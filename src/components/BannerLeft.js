@@ -15,6 +15,7 @@ class BannerLeft extends Component {
     this.handleMouseEnter = this.handleMouseEnter.bind(this)
     this.handleMouseLeave = this.handleMouseLeave.bind(this)
     this.constrolBackground = this.constrolBackground.bind(this)
+    this.controlToolTip = this.controlToolTip.bind(this)
   }
 
   handleClick() {
@@ -51,8 +52,8 @@ class BannerLeft extends Component {
 
   controlToolTip(){
     let toolTip
-    this.state.onHover? toolTip = {display: 'block', color: 'red', position: 'fixed'} : toolTip = {display: 'none'}
-    return <div id='tooltip' style={toolTip} title="regular tooltip">Hover me</div>
+    this.state.onHover? toolTip = 'tooltip': toolTip = 'tooltip-none'
+    return <div id='tooltip' className= {toolTip} >Click to see design skills</div>
   }
 
   findTooltipPosition() {
@@ -60,9 +61,8 @@ class BannerLeft extends Component {
     window.onmousemove = function (e) {
         var x = e.clientX,
             y = e.clientY;
-            console.log(x,y)
         tooltipSpan.style.top = (y-40) + 'px';
-        tooltipSpan.style.left = x + 'px';
+        tooltipSpan.style.left = (x-40) + 'px';
     }
   }
 

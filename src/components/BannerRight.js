@@ -35,11 +35,11 @@ class BannerRight extends Component {
     return (
       <div className={this.props.rightBannerClass} onClick={this.handleClick}>
           <span id="programmer" className="word">Programmer</span>
-          <span id="mongo" className="word">MongoDB</span>
           <span id="react" className="word">React.js</span>
+          <span id="mongo" className="word">MongoDB</span>
           <span id="node" className="word">Node.js</span>
           {codingChart}
-          <img src="images/right-face.png" alt="left-face" className={this.props.rightImageClass} id="right-face" ></img>
+          <img src="images/right-face2.png" alt="left-face" className={this.props.rightImageClass} id="right-face" ></img>
       </div>
     );
   }

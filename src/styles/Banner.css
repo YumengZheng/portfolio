@@ -37,7 +37,7 @@
   display: block;
   margin: auto auto 0px;
   /* border: 1px solid red; */
-  width: 51.8%;
+  width: 50%;
   transition: 2s ease-in-out;
   -webkit-transition: 2s ease-in-out;
   -moz-transition: 2s ease-in-out;
@@ -57,23 +57,23 @@
   display: block;
   font-size: 3em;
   color: #55515B;
-  margin: 70px 0 0 110px;
+  margin: 90px 0 0 160px;
 }
 #ps{
   display: block;
-  margin: 350px 0 0  220px;
+  margin: 380px 0 0 350px;
   z-index: -1;
 }
 
 #ai{
   display: block;
-  margin: 190px 0 0 40px;
+  margin: 250px 0 0 140px;
   z-index: -1;
 }
 
 #id{
   display: block;
-  margin: 470px 0 0 100px;
+  margin: 480px 0 0 200px;
   z-index: -1;
 }
 
@@ -176,31 +176,34 @@
   display: block;
   font-size: 3em;
   color: #55515B;
-  margin: 70px 0 0 830px;
+  margin: 90px 0 0 870px;
 }
 
 #mongo{
   display: block;
-  font-size: 3.5em;
-  color: #8BE0F7;
-  margin: 280px 0 0 850px;
+  font-size: 3.2em;
+  color: #CDE0D1;
+  margin: 440px 0 0 740px;
   z-index: -1;
+  font-family: 'Nunito', sans-serif;
 }
 
 #react{
   display: block;
-  font-size: 3.2em;
-  color: #CDE0D1;
-  margin: 450px 0 0 700px;
+  font-size: 4em;
+  color: #8BE0F7;
+  margin: 260px 0 0 880px;
   z-index: -1;
+  font-family: 'Nunito', sans-serif;
 }
 
 #node{
   display: block;
   font-size: 2.5em;
   color: #D5CCE5;
-  margin: 520px 0 0 800px;
+  margin: 520px 0 0 880px;
   z-index: -1;
+  font-family: 'Nunito', sans-serif;
 }
 
 

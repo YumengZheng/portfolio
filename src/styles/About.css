@@ -7,7 +7,7 @@
   flex-direction: column;
   border: 1px solid blue;
   color:#55515B;
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* part one  */
@@ -163,6 +163,36 @@
   /* border: 1px solid blue; */
   z-index: 10000;
 }
+.about-part-six{
+  width: 85%;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+}
+.about-part-six-text{
+  display: block;
+  font-size: 1.5em;
+  width: 40%;
+  margin: 66px 0 0 48%;
+  border: 1px solid blue;
+}
+.about-part-six-image-box{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid blue;
+}
+.about-part-six-image-game{
+  margin: 40px 0 0 0;
+  position: absolute;
+  border: 1px solid blue;
+}
+.about-part-six-image-food{
+  margin-left: 860px;
+  position: absolute;
+  border: 1px solid blue;
+}
 
 /* canvas */
 
@@ -170,6 +200,7 @@
   margin: auto auto;
   position: absolute;
   z-index: 1000;
+  width: 100%;
   border: 1px solid black;
 }
 

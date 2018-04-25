@@ -25,24 +25,24 @@ class About extends Component {
 						ctx.lineJoin="miter";
             ctx.beginPath();
             ctx.setLineDash([5,5]);
-						ctx.moveTo(230,260);
+						ctx.moveTo(230,250);
 						ctx.lineTo(230,350);
-						ctx.lineTo(660,350);
+						ctx.lineTo(665,350);
 						ctx.moveTo(1000,350);
 						ctx.lineTo(1100,350);
-						ctx.moveTo(300,800);
+						ctx.moveTo(300,810);
             ctx.lineTo(300,990);
             ctx.lineTo(1050,990);
-            ctx.lineTo(1050,930);
-						ctx.moveTo(760,930);
+            ctx.lineTo(1050,950);
+						ctx.moveTo(760,955);
             ctx.lineTo(760,990);
-						ctx.moveTo(180,800);
-            ctx.lineTo(180,1060);
-            ctx.lineTo(300,1060);
-						ctx.moveTo(600,1060);
-            ctx.lineTo(1050,1060);
-            ctx.lineTo(1050,1100);
-						ctx.moveTo(1050,1400);
+						ctx.moveTo(180,810);
+            ctx.lineTo(180,1070);
+            ctx.lineTo(300,1070);
+						ctx.moveTo(620,1070);
+            ctx.lineTo(1050,1070);
+            ctx.lineTo(1050,1120);
+						ctx.moveTo(1050,1430);
             ctx.lineTo(1050,1650);
             ctx.lineTo(600,1650);
 						ctx.moveTo(210,1650);
@@ -57,6 +57,18 @@ class About extends Component {
             ctx.lineTo(800,2050);
             ctx.moveTo(350,2050);
             ctx.lineTo(950,2050);
+            ctx.moveTo(150,2150);
+            ctx.lineTo(150,2330);
+            ctx.lineTo(460,2330);
+            ctx.lineTo(460,2300);
+            ctx.moveTo(870,2260);
+            ctx.lineTo(1050,2260);
+            ctx.lineTo(1050,2500);
+            ctx.lineTo(880,2500);
+            ctx.moveTo(555,2615);
+            ctx.lineTo(555,2750);
+            ctx.moveTo(400,2750);
+            ctx.lineTo(900,2750);
             ctx.stroke();	
           }
 				}
@@ -74,21 +86,21 @@ class About extends Component {
         <div className='about-part-two'>
           <p className='about-part-two-text'>My latest coding projects</p>
           <div className="coding-projects-outter-box">
-              <LastestProject />
-              <LastestProject />   
+              <LastestProject url="http://ivyzheng.us/mindsweeper/" image="images/mindsweeper.png" name="Mind Sweeper Game" tech="React, Redux, Javascript, Html, Css"/>   
+              <LastestProject url="http://pickawatermelon.com/" image="images/watermelon.png" name="Watermelon University" tech="Javascript, JQuery, Html, Css"/>
           </div>    
         </div>
         <div className='about-part-three'>
             <p className='about-part-three-text'>I design websites and t-shirts</p>
             <img className='about-part-three-image-web' src="images/web.png" alt="web-image" />
-            <img className='about-part-three-image-tee' src="images/tee.png" alt="tee-image" />
+            <a href="https://www.ivytees.com/" className='about-part-three-image-tee-box'  target="_blank" ><img className='about-part-three-image-tee' src="images/tee.png" alt="tee-image" /></a>
         </div>
         <div className='about-part-four'>
             <p className='about-part-four-text'>My latest design project</p>
             <div className="design-projects-outter-box">
               <LastestProject />
               <LastestProject />
-              <LastestProject />
+              <LastestProject url="http://zhengyumeng.com/" image="images/fashion1.png" name="Fashion Design" tech="Javascript, JQuery, Html, Css"/>
             </div>   
         </div>  
         <div className='about-part-five'>
@@ -105,10 +117,13 @@ class About extends Component {
         <div className='about-part-seven'>
             <p className='about-part-seven-text'>You can contact me through email<br/>or find me on Linkedin and Github</p>
             <div className='about-part-seven-image-outter-box'>
-              <div className='about-part-seven-image-box' ><img className='about-part-seven-image-flight' src="images/flight.png" alt="flight-image" /></div>
-              <div className='about-part-seven-image-box'><img className='about-part-seven-image-linkedin' src="images/linkedin.png" alt="linkedin-image" /></div>
-              <div className='about-part-seven-image-box'><img className='about-part-seven-image-github' src="images/github.png" alt="github-image" /></div>
+              <div className='about-part-seven-image-box' ><img className='about-part-seven-image' src="images/flight.png" alt="flight-image" /></div>
+              <div className='about-part-seven-image-box'><img className='about-part-seven-image' src="images/linkedin.png" alt="linkedin-image" /></div>
+              <div className='about-part-seven-image-box'><img className='about-part-seven-image' src="images/github.png" alt="github-image" /></div>
             </div>
+        </div>
+        <div className='about-part-eight'>
+            <p className='about-part-eight-text'>Thank you for reading</p>
         </div>
             <canvas id="canvas" width="1300" height="3320">fall back</canvas>
       </div>

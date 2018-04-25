@@ -7,6 +7,7 @@
   flex-direction: column;
   border: 1px solid blue;
   color:#55515B;
+  font-size: 1.4em;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -21,8 +22,7 @@
 }
 .about-part-one-text{
   width: 54%;
-  margin: 50px 0 0 0;
-  font-size: 1.5em;
+  margin: 55px 0 0 0;
   /* border: 1px solid blue; */
 }
 .about-part-one-image{
@@ -43,18 +43,18 @@
 }
 .about-part-two-text{
   display: block;
-  font-size: 1.5em;
-  margin: 28px 0 0 516px;
+  margin: 30px 0 0 533px;
   /* border: 1px solid blue; */
 }
 
 .coding-projects-outter-box{
   width: 75%;
   height: 250px;
-  margin: 30px auto 0;
+  margin: 45px auto 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  z-index: 100;
   /* border: 1px solid red; */
 }
 
@@ -71,7 +71,6 @@
   width: 51%;
   height: auto;
   display: block;
-  font-size: 1.5em;
   margin-top: 45px;
   /* border: 1px solid blue; */
 }
@@ -83,10 +82,16 @@
   margin-right:8%; 
   /* border: 1px solid blue; */
 }
-
-.about-part-three-image-tee{
+.about-part-three-image-tee-box{
   width:20%;
   height:auto;
+  display: flex;
+  z-index: 100;
+  /* border: 1px solid blue; */
+}
+.about-part-three-image-tee{
+  width:100%;
+  margin: auto;
   object-fit: contain;
   /* border: 1px solid blue; */
 } 
@@ -96,24 +101,23 @@
   width: 80%;
   height: 400px;
   display: flex;
-  margin: 45px auto 0;
+  margin: 55px auto 0;
   flex-direction: column;
-  font-size:1.5em;
   /* border: 1px solid blue; */
 }
 .about-part-four-text{
   display: block;
   width: auto;
-  margin-left: 170px; 
+  margin-left: 180px; 
 }
 .design-projects-outter-box{
   width: 100%;
-  height: auto;
-  margin: 20px auto 0;
+  margin: 25px auto 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid red;
+  z-index: 100;
+  /* border: 1px solid red; */
 }
 
 /* part five */
@@ -131,7 +135,7 @@
   margin: 80px 0 0 125px;
   display: block;
   /* border: 1px solid blue; */
-  z-index: 10000;
+  z-index: 100;
 }
 .about-part-five-image-tv{
   width: 100%;
@@ -142,9 +146,8 @@
 }
 .about-part-five-text{
   display: block;
-  font-size: 1.5em;
   max-height: 30%;
-  margin: 165px 0 0 10%;
+  margin: 135px 0 0 100px;
   /* border: 1px solid blue; */
 }
 
@@ -152,15 +155,15 @@
   width: 8%;
   height: 50%;
   object-fit: contain;
-  margin: 20px 0 0 40px ;
+  margin: 15px 0 0 50px ;
   /* border: 1px solid blue; */
-  z-index: 10000;
+  z-index: 100;
 }
 
 /* part six */
 .about-part-six{
   width: 80%;
-  height: 400px;
+  height: 390px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -168,24 +171,23 @@
 }
 .about-part-six-text{
   display: block;
-  font-size: 1.5em;
   width: 60%;
-  margin: 20px 0 0 470px;
+  margin: 0 0 0 470px;
   /* border: 1px solid blue; */
 }
 .about-part-six-image-box{
   display: flex;
   flex-direction: row;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .about-part-six-image-game{
-  margin: 160px 0 0 -20px;
+  margin: 160px 0 0 -25px;
   position: absolute;
   /* border: 1px solid blue; */
 }
 .about-part-six-image-food{
   width: 15%;
-  margin: 135px 0 0 785px;
+  margin: 120px 0 0 785px;
   position: absolute;
   /* border: 1px solid blue; */
 }
@@ -198,45 +200,67 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  /* border: 1px solid blue; */
 }
 
 .about-part-seven-text{
   width: 40%;
-  border: 1px solid blue;
+  margin: 0 0 0 300px;
+  /* border: 1px solid blue; */
 
 }
 .about-part-seven-image-outter-box{
   width: 60%;
   display: flex;
-  margin: 0 0 0 60px;
+  margin: 110px 0 0 120px;
   flex-direction: row;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .about-part-seven-image-box{
   flex:1;
   margin-right:20px; 
-  border: 1px solid blue;
+  z-index:100;
+  /* border: 1px solid blue; */
 }
-.about-part-seven-image-flight{
+
+.about-part-seven-image{
   width:100%;
   margin-top: 10px;
   object-fit: contain;
+  cursor: pointer;
+}
+.about-part-seven-image{
+  width:100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+.about-part-seven-image{
+  width:100%;
+  object-fit: contain;
+  cursor: pointer;
 }
 
-.about-part-seven-image-linkedin{
-  width:100%;
-  object-fit: contain;
+/* part eight */
+.about-part-eight{
+  width: 80%;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  /* border: 1px solid blue; */
 }
-.about-part-seven-image-github{
-  width:100%;
-  object-fit: contain;
+.about-part-eight-text{
+  width: 30%;
+  height: 40px;
+  display: block;
+  margin: 85px 0 0 0;
+  /* border: 1px solid blue; */
 }
 /* canvas */
 
 #canvas{
   margin: auto auto;
   position: absolute;
-  z-index: 1000;
+  z-index: 99;
   width: 100%;
   border: 1px solid black;
 }

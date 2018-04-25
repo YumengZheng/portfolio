@@ -1,17 +1,20 @@
 .project-box{
   width: 300px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   background-color:white;
   border-radius: 5px;
+  cursor: pointer;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border: 1px solid blue;
+  font-size: 0.7em; 
+  /* border: 1px solid blue; */
 }
 .project-image-box{
   width: 90%;
   margin: 20px auto 0;
   display: block;
-  border: 1px solid blue;
+  border: 1px solid grey;
 }
 .project-image{
   width: 100%;
@@ -21,6 +24,13 @@
 .project-name{
   display: block;
   width: 90%;
-  margin: 15px auto;
+  margin: 15px auto 0;
+  /* border: 1px solid blue; */
+}
+.project-tech{
+  display: block;
+  width: 90%;
+  margin: 5px auto 0;
+  font-size: 0.7em; 
   /* border: 1px solid blue; */
 }

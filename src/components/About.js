@@ -99,8 +99,16 @@ class About extends Component {
         </div>
         <div className='about-part-six'>
             <p className='about-part-six-text'>I am an expert at eatting Chinese food <br/>and playing Exploding Kittens</p>
-            <img className='about-part-six-image-game' src="images/game.png" alt="dance-image" />
-            <img className='about-part-six-image-food' src="images/food.png" alt="dance-image" />
+            <img className='about-part-six-image-game' src="images/game.png" alt="game-image" />
+            <img className='about-part-six-image-food' src="images/food.png" alt="food-image" />
+        </div>
+        <div className='about-part-seven'>
+            <p className='about-part-seven-text'>You can contact me through email<br/>or find me on Linkedin and Github</p>
+            <div className='about-part-seven-image-outter-box'>
+              <div className='about-part-seven-image-box' ><img className='about-part-seven-image-flight' src="images/flight.png" alt="flight-image" /></div>
+              <div className='about-part-seven-image-box'><img className='about-part-seven-image-linkedin' src="images/linkedin.png" alt="linkedin-image" /></div>
+              <div className='about-part-seven-image-box'><img className='about-part-seven-image-github' src="images/github.png" alt="github-image" /></div>
+            </div>
         </div>
             <canvas id="canvas" width="1300" height="3320">fall back</canvas>
       </div>

@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { Component } from "react";
-import '../styles/App.css';
+import '../styles/Arrow.css';
 
 class Arrow extends Component {
   constructor(props){

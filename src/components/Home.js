@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React, { Component } from 'react';
+import React from 'react';
 import '../styles/App.css';
 import Banner from './Banner.js';
 import About from './About.js';

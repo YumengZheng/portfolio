@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import '../styles/App.css';
+import '../styles/Nav.css';
 
 class Nav extends Component {
   render() {

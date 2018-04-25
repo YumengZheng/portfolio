@@ -1,0 +1,17 @@
+.emma-design{
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  border: 1px solid blue;
+}
+.emma-design-image{
+  max-width:100%;
+  max-height: auto;
+  /* object-fit: contain; */
+  display: block;
+  /* margin: 0; */
+  width: auto;
+  height: auto;
+  /* border: 1px solid blue; */
+}

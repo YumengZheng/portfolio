@@ -3,7 +3,7 @@
 /* @media screen and (max-width: 1280px)  */
 .App {
   width: 1240px;
-  height: 4000px;
+  height: auto;
   margin: 0 auto;
   display: flex;
   position: relative;
@@ -13,102 +13,13 @@
   box-shadow:0 0 15px grey, 0 0 2px
 }
 
-.nav{
-  display: flex;
-  position: relative;
-  background-color:rgb(71, 70, 71);
-  height: 50px;
-  width: 100%;
-}
 
 /* need to change height to a number later  */
 .home{
   width: 100%;
-  height: auto; 
+  height: 4000px; 
   display: flex;
   flex-direction: column;
-}
-
-
-/* nav bar */
-.logo-box{
-  display: flex;
-  width: 15%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  /* border: 1px solid blue; */
-}
-.logo-inner-box{
-  height: 100%;
-  margin: 0;
-  /* border: 1px solid red;  */
-}
-.logo{
-  margin: auto auto;
-  color:white;
-  max-height: 100%;
-  /* border: 1px solid red; */
-}
-.nav-outter-box{
-  display: flex;
-  width: 30%;
-  margin-left:55%; 
-  align-items: center;
-  justify-content: center;
-  /* border: 1px solid red; */
-}
-
-.nav-inner-box{
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin-top:10px;
-  /* border: 1px solid red; */
-}
-.nav-option{
-  display: inline-block;
-  box-sizing: border-box;
-  width:22%;
-  color: white;
-  /* border: 1px solid red; */
-}
-
-
-/* arrow */
-.arrow{
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 1000;
-}
-.right-arrow-outter-box{
-  height: 100%;
-  width: 15%;
-  float: left;
-  display: flex;
-  /* border: 1px solid blue; */
-}
-#right-arrow{
-  display: block;
-  width: 90%;
-  margin:auto auto;
-  /* border: 1px solid blue; */
-}
-.left-arrow-outter-box{
-  height: 100%;
-  width: 15%;
-  float: right;
-  display: flex;
-  /* border: 1px solid blue; */
-}
-#left-arrow{
-  display: block;
-  width: 90%;
-  margin:auto auto;
-  z-index: 100;
-  /* border: 1px solid blue; */
 }
 
 

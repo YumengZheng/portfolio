@@ -126,9 +126,9 @@
   /* border: 1px solid blue; */
 }
 .about-part-five-tv-box{
-  width: 36%;
+  width: 28%;
   height: auto;
-  margin: 80px 0 0 10%;
+  margin: 80px 0 0 125px;
   display: block;
   /* border: 1px solid blue; */
   z-index: 10000;
@@ -179,12 +179,13 @@
   border: 1px solid blue;
 }
 .about-part-six-image-game{
-  margin: 160px 0 0 0;
+  margin: 160px 0 0 -20px;
   position: absolute;
   /* border: 1px solid blue; */
 }
 .about-part-six-image-food{
-  margin: 100px 0 0 760px;
+  width: 15%;
+  margin: 135px 0 0 785px;
   position: absolute;
   /* border: 1px solid blue; */
 }

@@ -15,7 +15,7 @@
   width: 80%;
   height: 250px;
   display: flex;
-  margin: 20px auto 0;
+  margin: 15px auto 0;
   flex-direction: row; 
   /* border: 1px solid blue; */
 }
@@ -33,114 +33,93 @@
 }
 
 /* part two */
+.about-part-two{
+  width: 80%;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto 0;
+  /* border: 1px solid blue; */
+}
 .about-part-two-text{
   display: block;
   font-size: 1.5em;
-  margin:  45px 0 0 641px;
+  margin: 28px 0 0 516px;
   /* border: 1px solid blue; */
 }
 
-
-
-
-
-.design-projects-outter-box{
-  width: 80%;
-  height: 250px;
-  margin: 40px auto 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border: 1px solid red;
-}
-
-
-
-
-
-
-/* lastest project */
 .coding-projects-outter-box{
-  width: 60%;
+  width: 75%;
   height: 250px;
-  margin: 40px auto 0;
+  margin: 30px auto 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid red;
-}
-
-.project-box{
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  background-color:white;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border: 1px solid blue;
-}
-.project-image-box{
-  width: 90%;
-  margin: 20px auto 0;
-  display: block;
-  border: 1px solid blue;
-}
-.project-image{
-  width: 100%;
-  display: block;
-  /* border: 1px solid blue; */
-}
-.project-name{
-  display: block;
-  width: 90%;
-  margin: 15px auto;
-  /* border: 1px solid blue; */
+  /* border: 1px solid red; */
 }
 
 /* part three */
-
 .about-part-three{
   width: 80%;
-  height: 315px;
+  height: 250px;
   display: flex;
-  margin: 80px auto 0;
+  margin: 20px auto 0;
   flex-direction: row; 
   /* border: 1px solid blue; */
 }
 .about-part-three-text{
-  width: 30%;
+  width: 51%;
   height: auto;
   display: block;
   font-size: 1.5em;
-  flex: 3;
-  margin-top: 40px;
+  margin-top: 45px;
   /* border: 1px solid blue; */
 }
 
 .about-part-three-image-web{
-  width: 15%;
-  max-height:50%;
+  width:20%;
+  height:auto;
   object-fit: contain;
-  flex:1;
-  margin-right:100px; 
+  margin-right:8%; 
   /* border: 1px solid blue; */
 }
 
 .about-part-three-image-tee{
-  width: 15%;
-  max-height:50%;
+  width:20%;
+  height:auto;
   object-fit: contain;
-  flex:1;
   /* border: 1px solid blue; */
 } 
+
+/* part four */
 .about-part-four{
+  width: 80%;
+  height: 400px;
+  display: flex;
+  margin: 45px auto 0;
+  flex-direction: column;
   font-size:1.5em;
-  margin: 0 0 0 25%;
-  display: block;
+  /* border: 1px solid blue; */
 }
+.about-part-four-text{
+  display: block;
+  width: auto;
+  margin-left: 170px; 
+}
+.design-projects-outter-box{
+  width: 100%;
+  height: auto;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+/* part five */
 .about-part-five{
   width:80%;
-  height: 400px;
+  height: 350px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -148,14 +127,16 @@
 }
 .about-part-five-tv-box{
   width: 36%;
-  max-height: 100%;
-  margin: 100px 0 0 10%;
+  height: auto;
+  margin: 80px 0 0 10%;
+  display: block;
   /* border: 1px solid blue; */
   z-index: 10000;
 }
 .about-part-five-image-tv{
   width: 100%;
-  max-height: 100%;
+  height: auto;
+  display: block;
   object-fit: contain;
   /* border: 1px solid blue; */
 }
@@ -163,32 +144,34 @@
   display: block;
   font-size: 1.5em;
   max-height: 30%;
-  margin: 170px 0 0 10%;
+  margin: 165px 0 0 10%;
   /* border: 1px solid blue; */
 }
 
 .about-part-five-image-dance{
   width: 8%;
-  height: 60%;
+  height: 50%;
   object-fit: contain;
-  margin: 50px 0 0 6% ;
+  margin: 20px 0 0 40px ;
   /* border: 1px solid blue; */
   z-index: 10000;
 }
+
+/* part six */
 .about-part-six{
-  width: 85%;
+  width: 80%;
   height: 400px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .about-part-six-text{
   display: block;
   font-size: 1.5em;
-  width: 40%;
-  margin: 66px 0 0 48%;
-  border: 1px solid blue;
+  width: 60%;
+  margin: 20px 0 0 470px;
+  /* border: 1px solid blue; */
 }
 .about-part-six-image-box{
   display: flex;
@@ -196,14 +179,14 @@
   border: 1px solid blue;
 }
 .about-part-six-image-game{
-  margin: 40px 0 0 0;
+  margin: 160px 0 0 0;
   position: absolute;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .about-part-six-image-food{
-  margin-left: 860px;
+  margin: 100px 0 0 760px;
   position: absolute;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 /* canvas */

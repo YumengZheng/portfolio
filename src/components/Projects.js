@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import '../styles/About.css';
+import '../styles/Project.css';
 import $ from 'jquery';
 
 class LastestProject extends Component {

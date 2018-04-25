@@ -71,22 +71,26 @@ class About extends Component {
             <p className='about-part-one-text'><span style={{fontSize: "2.5em"}}>I’m Ivy</span><br/>I am a software engineer based in San Francisco</p>
             <img className='about-part-one-image' src="images/bridge.png" alt="bridge-image" />
         </div>
-        <p className='about-part-two-text'>My latest coding projects</p>
-        <div className="coding-projects-outter-box">
-            <LastestProject />
-            <LastestProject />   
-        </div>    
+        <div className='about-part-two'>
+          <p className='about-part-two-text'>My latest coding projects</p>
+          <div className="coding-projects-outter-box">
+              <LastestProject />
+              <LastestProject />   
+          </div>    
+        </div>
         <div className='about-part-three'>
             <p className='about-part-three-text'>I design websites and t-shirts</p>
             <img className='about-part-three-image-web' src="images/web.png" alt="web-image" />
             <img className='about-part-three-image-tee' src="images/tee.png" alt="tee-image" />
         </div>
-            <p className='about-part-four'>My latest design project</p>
+        <div className='about-part-four'>
+            <p className='about-part-four-text'>My latest design project</p>
             <div className="design-projects-outter-box">
               <LastestProject />
               <LastestProject />
               <LastestProject />
-            </div>    
+            </div>   
+        </div>  
         <div className='about-part-five'>
             <a href="https://www.youtube.com/watch?v=TYmfoCp1S44" target="_blank" className="about-part-five-tv-box"><img className='about-part-five-image-tv' src="images/tv.png" alt="tv-image" /></a>
             <p className='about-part-five-text'>I like dancing</p>
@@ -94,11 +98,8 @@ class About extends Component {
         </div>
         <div className='about-part-six'>
             <p className='about-part-six-text'>I am an expert at eatting Chinese food <br/>and playing Exploding Kittens</p>
-            <div className='about-part-six-image-box'>
-              <img className='about-part-six-image-game' src="images/game.png" alt="dance-image" />
-              <img className='about-part-six-image-food' src="images/food.png" alt="dance-image" />
-            </div>
-
+            <img className='about-part-six-image-game' src="images/game.png" alt="dance-image" />
+            <img className='about-part-six-image-food' src="images/food.png" alt="dance-image" />
         </div>
             <canvas id="canvas" width="1300" height="3320">fall back</canvas>
       </div>

@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import '../styles/App.css';
+import '../styles/Banner.css';
 import Arrow from './Arrow.js';
 import BannerLeft from './BannerLeft.js';
 import BannerRight from './BannerRight.js';

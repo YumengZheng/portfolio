@@ -1,3 +1,14 @@
+.banner{
+  position: relative;
+  display: flex;
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+  /* border: 1px solid red; */
+}
+
+
 /* tootip */
 .tooltip{
   display: flex;

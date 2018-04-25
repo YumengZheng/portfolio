@@ -21,15 +21,14 @@
   width: 100%;
 }
 
-.banner{
-  position: relative;
-  display: flex;
-  height: 600px;
+/* need to change height to a number later  */
+.home{
   width: 100%;
-  overflow: hidden;
-  background-color: white;
-  /* border: 1px solid red; */
+  height: auto; 
+  display: flex;
+  flex-direction: column;
 }
+
 
 /* nav bar */
 .logo-box{

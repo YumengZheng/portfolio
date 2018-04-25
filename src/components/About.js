@@ -25,10 +25,10 @@ class About extends Component {
 						ctx.lineJoin="miter";
             ctx.beginPath();
             ctx.setLineDash([5,5]);
-						ctx.moveTo(230,220);
+						ctx.moveTo(230,260);
 						ctx.lineTo(230,350);
-						ctx.lineTo(690,350);
-						ctx.moveTo(970,350);
+						ctx.lineTo(660,350);
+						ctx.moveTo(1000,350);
 						ctx.lineTo(1100,350);
 						ctx.moveTo(300,800);
             ctx.lineTo(300,990);
@@ -72,14 +72,21 @@ class About extends Component {
             <img className='about-part-one-image' src="images/bridge.png" alt="bridge-image" />
         </div>
         <p className='about-part-two-text'>My latest coding projects</p>
+        <div className="coding-projects-outter-box">
             <LastestProject />
+            <LastestProject />   
+        </div>    
         <div className='about-part-three'>
             <p className='about-part-three-text'>I design websites and t-shirts</p>
             <img className='about-part-three-image-web' src="images/web.png" alt="web-image" />
             <img className='about-part-three-image-tee' src="images/tee.png" alt="tee-image" />
         </div>
             <p className='about-part-four'>My latest design project</p>
-            <LastestProject />
+            <div className="design-projects-outter-box">
+              <LastestProject />
+              <LastestProject />
+              <LastestProject />
+            </div>    
         <div className='about-part-five'>
             <a href="https://www.youtube.com/watch?v=TYmfoCp1S44" target="_blank" className="about-part-five-tv-box"><img className='about-part-five-image-tv' src="images/tv.png" alt="tv-image" /></a>
             <p className='about-part-five-text'>I like dancing</p>

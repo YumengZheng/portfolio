@@ -1,18 +1,24 @@
 /* tootip */
 .tooltip{
-  display: block;
-  color: pink;
+  display: flex;
+  color: white;
   position: fixed;
   width: 200px;
-  height: 20px;
+  height: 25px;
   /* background-color: springgreen; */
   z-index: 1000000;
+  background: linear-gradient(to bottom right, #FF8086, #83E8FF);;
+  border-radius: 3px;
 }
 
 .tooltip-none{
   display: none;
 }
-
+.inner-box{
+  display: block;
+  margin: auto auto;
+  /* border: 1px solid red; */
+}
 /* banner left */
 .banner-left-cover{
   display: flex;
@@ -23,7 +29,7 @@
   -webkit-transition: 1s;
   transition: 1s;
   clip-path: inset(0 50.9% 0 0);
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   cursor: pointer;
 }
 
@@ -40,7 +46,7 @@
 }
 
 .banner-left-back-to-screen {
-  margin-left:0px; 
+  margin-left:0%; 
 }
 
 .banner-left-cover-disappear{
@@ -58,10 +64,10 @@
   margin: auto auto 0px;
   /* border: 1px solid red; */
   width: 50%;
-  transition: 2s ease-in-out;
-  -webkit-transition: 2s ease-in-out;
-  -moz-transition: 2s ease-in-out;
-  -o-transition: 2s ease-in-out;
+  transition: 1.5s ease-in-out;
+  -webkit-transition: 1.5s ease-in-out;
+  -moz-transition: 1.5s ease-in-out;
+  -o-transition: 1.5s ease-in-out;
 } 
 
 .left-face-shrink{
@@ -104,11 +110,11 @@
   position: absolute;
   margin: 60px 0 0 100px;
   /* border: 1px solid red; */
-  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 3s; /* Firefox < 16 */
-  -ms-animation: fadein 3s; /* Internet Explorer */
-  -o-animation: fadein 3s; /* Opera < 12.1 */
-  animation: fadein 3s;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
 }
 
 @keyframes fadein {
@@ -147,10 +153,10 @@
   height: 100%;
   width: 100%;
   overflow:hidden;
-  -webkit-transition: 1.5s;
-  transition: 1.5s; 
+  -webkit-transition: 1s;
+  transition: 1s; 
   clip-path: inset(0 0 0 48.9%);
-  border: 1px solid blue; 
+  /* border: 1px solid blue;  */
   cursor: pointer;
 }
 
@@ -182,14 +188,14 @@
   display: block;
   margin: auto auto 0px;
   width: 50%;
-  transition: 2s ease-in-out;
-  -webkit-transition: 2s ease-in-out;
-  -moz-transition: 2s ease-in-out;
-  -o-transition: 2s ease-in-out;
+  transition: 1.5s ease-in-out;
+  -webkit-transition: 1.5s ease-in-out;
+  -moz-transition: 1.5s ease-in-out;
+  -o-transition: 1.5s ease-in-out;
 } 
 
 .right-face-shrink{
-  width: 29%;
+  width: 30%;
   transform: translate(550px,0);
   -webkit-transform: translate(550px,0); 
   -moz-transform: translate(550px,0); 
@@ -239,11 +245,11 @@
   position: absolute;
   margin: 60px 0 0 100px;
   /* border: 1px solid red; */
-  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 3s; /* Firefox < 16 */
-  -ms-animation: fadein 3s; /* Internet Explorer */
-  -o-animation: fadein 3s; /* Opera < 12.1 */
-  animation: fadein 3s;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
 }
 
 @keyframes fadein {

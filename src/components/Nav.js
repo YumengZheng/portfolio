@@ -7,8 +7,7 @@ class Nav extends Component {
     return (
       <div className="nav">
         <div className="logo-box">
-          <a href="http://localhost:3000/"><img src="images/logo.png" className="logo"/></a>
-          {/* <p className="logo">Ivy Zheng</p> */}
+          <a href="http://localhost:3000/" className="logo-inner-box"><img src="images/logo.png" className="logo"/></a>
         </div>
         <div className="nav-outter-box">
           <div className="nav-inner-box">

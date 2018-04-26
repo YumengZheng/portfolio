@@ -6,39 +6,34 @@ import {Bar} from 'react-chartjs-2'
 class DesignChart extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-      chartData:{
-        labels: ["Illustrator", "Photoshop", "Sketching", "Indesign", "3D Printing", "Rhino"],
-        datasets:[
-          {
-            label: 'Design Skill',
-            data: [7, 6, 5, 3, 2, 2],
-            backgroundColor: [
-              'rgba(255, 99, 132, 1)',
-              'rgba(54, 162, 235, 1)',
-              'rgba(255, 206, 86, 1)',
-              'rgba(75, 192, 192, 1)',
-              'rgba(153, 102, 255, 1)',
-              'rgba(255, 159, 64, 1)',
-              'rgba(255, 159, 64, 1)',
-              'rgba(255, 206, 86, 1)',
-              'rgba(255, 99, 132, 1)'
-          ],
-          borderColor: 'rgb(255,255,255)',
-          color: 'rgb(255,255,255)'
-          }
-        ]
-      }
-    }
   }
   render() {
     const yLabels = {
       0 : '', 2 : 'NEWBIE', 4 : 'TRYHARD', 6 : 'DESIGNER', 8 : 'NO-LIFE',
     }
+
     return (
       <div className="design-chart">
        <Bar
-       data={this.state.chartData} 
+       data={{
+              labels: ["Illustrator", "Photoshop", "Sketching", "Indesign", "Rhino"],
+              datasets:[
+                {
+                  label: 'Design Skills',
+                  data: [7, 6, 6, 5, 4],
+                  backgroundColor: [
+                    '#709DC7',
+                    '#44B3BB',
+                    '#71C690',
+                    '#D8B161',
+                    '#C97587'
+                  ],
+                  borderColor: '#878787',
+                  borderWidth:1,
+                  borderSkipped: 'top'
+                }
+              ]
+            }}
        options={{
           maintainAspectRatio:false,
           animation: {

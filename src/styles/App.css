@@ -20,7 +20,7 @@
   height: 3310px; 
   display: flex;
   flex-direction: column;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 

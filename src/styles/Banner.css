@@ -117,10 +117,10 @@
 
 /* left chart */
 .design-chart{
-  width: 65%;
+  width: 70%;
   height: 500px;
   position: absolute;
-  margin: 60px 0 0 100px;
+  margin: 60px 0 0 110px;
   /* border: 1px solid red; */
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -251,12 +251,12 @@
 }
 
 
-/* left chart */
-.design-chart{
-  width: 65%;
+/* right chart */
+.code-chart{
+  width: 70%;
   height: 500px;
   position: absolute;
-  margin: 60px 0 0 100px;
+  margin: 60px 0 0 110px;
   /* border: 1px solid red; */
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s; /* Firefox < 16 */

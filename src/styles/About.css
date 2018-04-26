@@ -4,7 +4,7 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   color:#474647;
   font-size: 1.4em;
   font-family: 'Poppins', sans-serif;
@@ -296,6 +296,6 @@
   position: absolute;
   z-index: 99;
   width: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 

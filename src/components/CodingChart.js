@@ -8,23 +8,21 @@ class DesignChart extends Component {
     super(props)
     this.state = {
       chartData:{
-        labels: ["Javascript", "React", "JQuery", "Node.js", "Express.js", "mongoDB", "Postgres"],
+        labels: ["Javascript", "React", "Redux", "Node.js", "mongoDB"],
         datasets:[
           {
-            label: 'Coding Skill',
-            data: [7, 6, 5, 3, 2, 2, 3],
+            label: 'Coding Skills',
+            data: [7, 7, 6, 5, 4, 3],
             backgroundColor: [
-              'rgba(255, 99, 132, 1)',
-              'rgba(54, 162, 235, 1)',
-              'rgba(255, 206, 86, 1)',
-              'rgba(75, 192, 192, 1)',
-              'rgba(153, 102, 255, 1)',
-              'rgba(255, 159, 64, 1)',
-              'rgba(255, 159, 64, 1)',
-              'rgba(255, 206, 86, 1)',
-              'rgba(255, 99, 132, 1)'
+              '#709DC7',
+              '#44B3BB',
+              '#71C690',
+              '#D8B161',
+              '#C97587'
             ],
-            borderColor: 'rgb(255,255,255)'
+            borderColor: '#878787',
+            borderWidth:1,
+            borderSkipped: 'top'
           }
         ]
       }
@@ -35,7 +33,7 @@ class DesignChart extends Component {
       0 : '', 2 : 'NEWBIE', 4 : 'TRYHARD', 6 : 'HACKER', 8 : 'NO-LIFE',
     }
     return (
-      <div className="design-chart">
+      <div className="code-chart">
        <Bar
        data={this.state.chartData} 
        options={{

@@ -98,8 +98,8 @@ class About extends Component {
         <div className='about-part-four'>
             <p className='about-part-four-text'>My latest design project</p>
             <div className="design-projects-outter-box">
-              <LastestProject />
-              <LastestProject />
+              <LastestProject url="http://localhost:3000/emma" image="images/emmashot1.png" name="Emma App" tech="Illustrator, Photoshop"/>
+              <LastestProject url="http://localhost:3000/mihaibao" image="images/mihaibaoshot.png" name="Mihaibao" tech="Illustrator, Photoshop"/>
               <LastestProject url="http://zhengyumeng.com/" image="images/fashion1.png" name="Fashion Design" tech="Javascript, JQuery, Html, Css"/>
             </div>   
         </div>  

@@ -10,21 +10,25 @@
   font-size: 0.7em; 
   /* border: 1px solid blue; */
 }
-.project-image-box{
+.project-link-box{
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.project-image{
   width: 90%;
   margin: 20px auto 0;
   display: block;
   border: 1px solid grey;
-}
-.project-image{
-  width: 100%;
-  display: block;
   /* border: 1px solid blue; */
 }
 .project-name{
   display: block;
   width: 90%;
   margin: 15px auto 0;
+  color:#474647;
   /* border: 1px solid blue; */
 }
 .project-tech{
@@ -32,5 +36,6 @@
   width: 90%;
   margin: 5px auto 0;
   font-size: 0.7em; 
+  color:#474647;
   /* border: 1px solid blue; */
 }

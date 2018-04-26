@@ -71,6 +71,8 @@ class About extends Component {
             ctx.moveTo(555,2615);
             ctx.lineTo(555,2750);
             ctx.moveTo(400,2750);
+            ctx.lineTo(800,2750);
+            ctx.moveTo(1000,2750);
             ctx.lineTo(1150,2750);
             ctx.lineTo(1150,2650);
             ctx.moveTo(1110,2700);
@@ -161,6 +163,7 @@ class About extends Component {
         </div>
         <div className='about-part-eight'>
             <p className='about-part-eight-text'>Thank you for reading</p>
+            <p className='about-part-eight-text-two'>Back to the top</p>
             <div className='about-part-eight-arrow' onClick={this.handleBottomArrowClick}></div>
         </div>
             <canvas id="canvas" width="1300" height="3320">fall back</canvas>

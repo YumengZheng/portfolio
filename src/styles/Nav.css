@@ -48,5 +48,6 @@
   box-sizing: border-box;
   width:22%;
   color: white;
+  cursor: pointer;
   /* border: 1px solid red; */
 }

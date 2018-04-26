@@ -5,7 +5,7 @@
   position: relative;
   flex-direction: column;
   /* border: 1px solid blue; */
-  color:#55515B;
+  color:#474647;
   font-size: 1.4em;
   font-family: 'Poppins', sans-serif;
 }
@@ -271,6 +271,13 @@
   margin: 85px 0 0 35px;
   /* border: 1px solid blue; */
 }
+.about-part-eight-text-two{
+  width: 30%;
+  height: 40px;
+  display: block;
+  margin: 85px 0 0 328px;
+  /* border: 1px solid blue; */
+}
 .about-part-eight-arrow{
   width: 8%;
   height: 90px;
@@ -280,6 +287,7 @@
   z-index: 100;
   /* border: 1px solid blue; */
 }
+
 /* canvas */
 
 #canvas{

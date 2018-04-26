@@ -18,7 +18,7 @@
   height: 25px;
   /* background-color: springgreen; */
   z-index: 1000000;
-  background: linear-gradient(to bottom right, #55515B, #CCE0F4);;
+  background: linear-gradient(to bottom right, #474647, #CCE0F4);;
   border-radius: 3px;
 }
 
@@ -45,12 +45,12 @@
 }
 
 .banner-left-cover:hover{
-  background-color:rgb(71, 70, 71);
+  background-color:#474647;
 }
 
 .banner-left-cover-click {
   clip-path: inset(0 0 0 0);
-  background-color:rgb(71, 70, 71);
+  background-color:#474647;
 }
 
 .banner-left-move-off-screen{
@@ -94,7 +94,7 @@
 #designer{
   display: block;
   font-size: 3em;
-  color: #55515B;
+  color: #474647;
   margin: 90px 0 0 155px;
 }
 #ps{
@@ -173,12 +173,12 @@
 }
 
 .banner-right-cover:hover{
-  background-color: rgb(71, 70, 71);
+  background-color: #474647;
 }
 
 .banner-right-cover-click {
   clip-path: inset(0 0 0 0);
-  background-color:rgb(71, 70, 71);
+  background-color:#474647;
 }
 
 .banner-right-move-off-screen{
@@ -219,7 +219,7 @@
 #programmer{
   display: block;
   font-size: 3em;
-  color: #55515B;
+  color: #474647;
   margin: 90px 0 0 870px;
 }
 

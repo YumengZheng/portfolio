@@ -24,6 +24,17 @@ class Nav extends Component {
     document.getElementById('contact').scrollIntoView();
   }
 
+  showNavOptions(){
+    let url = window.location.pathname
+    if(url === '/'){
+      return  <div className="nav-inner-box">
+                <span className="nav-option" onClick={this.handleAboutClick}>About</span>
+                <span className="nav-option" onClick={this.handleProjectsClick}>Projects</span>
+                <span className="nav-option" onClick={this.handlePortfolioClick}>Portfolio</span>
+                <span className="nav-option" onClick={this.handleContactClick}>Contact</span>
+              </div>
+    }
+  }
   render() {
     return (
       <div className="nav" id='nav'>
@@ -31,12 +42,7 @@ class Nav extends Component {
           <a href="http://localhost:3000/" className="logo-inner-box"><img src="images/logo.png" className="logo"/></a>
         </div>
         <div className="nav-outter-box">
-          <div className="nav-inner-box">
-            <span className="nav-option" onClick={this.handleAboutClick}>About</span>
-            <span className="nav-option" onClick={this.handleProjectsClick}>Projects</span>
-            <span className="nav-option" onClick={this.handlePortfolioClick}>Portfolio</span>
-            <span className="nav-option" onClick={this.handleContactClick}>Contact</span>
-          </div>
+          {this.showNavOptions()}
         </div>
       </div>
     );

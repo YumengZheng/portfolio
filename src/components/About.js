@@ -8,7 +8,13 @@ import LastestProject from './Projects.js';
 class About extends Component {
   constructor(props){
     super(props)
+    this.state = {
+      showArrow:true
+    }
     this.canvas = this.canvas.bind(this)
+    this.handleArrowClick = this.handleArrowClick.bind(this)
+    this.showArrow =  this.showArrow.bind(this)
+    this.handleScroll = this.handleScroll.bind(this)
   }
 
   canvas(){
@@ -76,17 +82,40 @@ class About extends Component {
     }
   }
 
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+  
+  handleScroll(event) {
+    var scrollTop = $(window).scrollTop()
+    if(scrollTop >= 400){
+      this.setState({
+        showArrow:false
+      }) 
+    } else {
+      this.setState({
+        showArrow:true
+      }) 
+    }
+  }
+  
   handleArrowClick(){
     document.getElementById('about').scrollIntoView();
   }
   handleBottomArrowClick(){
     document.getElementById('nav').scrollIntoView();
   }
+  showArrow(){
+    if(this.state.showArrow){
+      return  <div className='down-arrow-box' ><img src='images/downarrow1.gif' className='down-arrow' onClick={this.handleArrowClick}/></div>
+    }
+  }
+
   render() {
     this.canvas()
     return (
       <div className='about' id='about'>
-        <div className='down-arrow-box' ><img src='images/downarrow1.gif' className='down-arrow' onClick={this.handleArrowClick}/></div>
+          {this.showArrow()}
         <div className='about-part-one'>
             <p className='about-part-one-text'><span style={{fontSize: "2.5em"}}>I’m Ivy</span><br/>I am a software engineer based in San Francisco</p>
             <img className='about-part-one-image' src="images/bridge.png" alt="bridge-image" />

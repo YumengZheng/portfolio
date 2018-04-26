@@ -4,11 +4,28 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   color:#55515B;
   font-size: 1.4em;
   font-family: 'Poppins', sans-serif;
 }
+
+.down-arrow-box{
+  width: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 101;
+  /* border: 1px solid blue; */
+}
+
+
+.down-arrow{
+  display: block;
+  margin: 0 0 0 526px;
+  cursor: pointer;
+  /* border: 1px solid blue; */
+}
+
 
 /* part one  */
 .about-part-one{
@@ -241,7 +258,7 @@
 
 /* part eight */
 .about-part-eight{
-  width: 80%;
+  width: 85%;
   height: 200px;
   margin: 0 auto;
   display: flex;
@@ -251,7 +268,16 @@
   width: 30%;
   height: 40px;
   display: block;
-  margin: 85px 0 0 0;
+  margin: 85px 0 0 35px;
+  /* border: 1px solid blue; */
+}
+.about-part-eight-arrow{
+  width: 8%;
+  height: 90px;
+  margin: 0 0 0 950px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 100;
   /* border: 1px solid blue; */
 }
 /* canvas */
@@ -261,6 +287,6 @@
   position: absolute;
   z-index: 99;
   width: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 

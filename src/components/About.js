@@ -8,10 +8,7 @@ import LastestProject from './Projects.js';
 class About extends Component {
   constructor(props){
     super(props)
-    this.state = {
-      
-    }
-    this.canvas=this.canvas.bind(this)
+    this.canvas = this.canvas.bind(this)
   }
 
   canvas(){
@@ -68,24 +65,35 @@ class About extends Component {
             ctx.moveTo(555,2615);
             ctx.lineTo(555,2750);
             ctx.moveTo(400,2750);
-            ctx.lineTo(900,2750);
+            ctx.lineTo(1150,2750);
+            ctx.lineTo(1150,2650);
+            ctx.moveTo(1110,2700);
+            ctx.lineTo(1150,2650);
+            ctx.lineTo(1190,2700);
             ctx.stroke();	
           }
 				}
     }
   }
 
+  handleArrowClick(){
+    document.getElementById('about').scrollIntoView();
+  }
+  handleBottomArrowClick(){
+    document.getElementById('nav').scrollIntoView();
+  }
   render() {
     this.canvas()
     return (
-      <div className='about'>
+      <div className='about' id='about'>
+        <div className='down-arrow-box' ><img src='images/downarrow1.gif' className='down-arrow' onClick={this.handleArrowClick}/></div>
         <div className='about-part-one'>
             <p className='about-part-one-text'><span style={{fontSize: "2.5em"}}>I’m Ivy</span><br/>I am a software engineer based in San Francisco</p>
             <img className='about-part-one-image' src="images/bridge.png" alt="bridge-image" />
         </div>
         <div className='about-part-two'>
-          <p className='about-part-two-text'>My latest coding projects</p>
-          <div className="coding-projects-outter-box">
+          <p className='about-part-two-text' id='projects'>My latest coding projects</p>
+          <div className="coding-projects-outter-box" >
               <LastestProject url="http://ivyzheng.us/mindsweeper/" image="images/mindsweeper.png" name="Mind Sweeper Game" tech="React, Redux, Javascript, Html, Css"/>   
               <LastestProject url="http://pickawatermelon.com/" image="images/watermelon.png" name="Watermelon University" tech="Javascript, JQuery, Html, Css"/>
           </div>    
@@ -95,10 +103,10 @@ class About extends Component {
             <img className='about-part-three-image-web' src="images/web.png" alt="web-image" />
             <a href="https://www.ivytees.com/" className='about-part-three-image-tee-box'  target="_blank" ><img className='about-part-three-image-tee' src="images/tee.png" alt="tee-image" /></a>
         </div>
-        <div className='about-part-four'>
+        <div className='about-part-four' id='portfolio'>
             <p className='about-part-four-text'>My latest design project</p>
             <div className="design-projects-outter-box">
-              <LastestProject url="http://localhost:3000/mihaibao" image="images/mihaibaoshot2.png" name="Mihaibao" tech="Illustrator, Photoshop"/>
+              <LastestProject url="http://localhost:3000/mihaibao" image="images/mihaibaoshot1.png" name="Mihaibao" tech="Illustrator, Photoshop"/>
               <LastestProject url="http://localhost:3000/emma" image="images/emmashot1.png" name="Emma App" tech="Illustrator, Photoshop"/>
               <LastestProject url="http://zhengyumeng.com/" image="images/fashion1.png" name="Fashion Design Portfolio" tech="Illustrator, Photoshop, Html, Css"/>
             </div>   
@@ -114,7 +122,7 @@ class About extends Component {
             <img className='about-part-six-image-game' src="images/game.png" alt="game-image" />
             <img className='about-part-six-image-food' src="images/food.png" alt="food-image" />
         </div>
-        <div className='about-part-seven'>
+        <div className='about-part-seven' id='contact'>
             <p className='about-part-seven-text'>You can contact me through email<br/>or find me on Linkedin and Github</p>
             <div className='about-part-seven-image-outter-box'>
               <a href="mailto:zhengyumeng1125@gmail.com?Subject=Hello%20again" target="_top" className='about-part-seven-image-box'><img className='about-part-seven-image' src="images/flight.png" alt="flight-image" /></a>
@@ -124,6 +132,7 @@ class About extends Component {
         </div>
         <div className='about-part-eight'>
             <p className='about-part-eight-text'>Thank you for reading</p>
+            <div className='about-part-eight-arrow' onClick={this.handleBottomArrowClick}></div>
         </div>
             <canvas id="canvas" width="1300" height="3320">fall back</canvas>
       </div>

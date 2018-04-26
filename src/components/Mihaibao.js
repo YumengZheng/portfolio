@@ -17,8 +17,8 @@ class Mihaibao extends Component {
           <img src='./images/bcardfront.png' className="mihaibao-design-bcard-front"/>
         </div>
         <div className='mihaibao-design-part-three-box'>
-          <img src='./images/mihaibaobrandpage4.png' className='mihaibao-design-brands'/>
-          <img src='./images/mihaibaophone2.png' className='mihaibao-design-phone' />
+          <img src='./images/mihaibaobrandpage.png' className='mihaibao-design-brands'/>
+          <img src='./images/mihaibaophone.png' className='mihaibao-design-phone' />
         </div>
         {/* <img src='./images/mihaibaophone.png' className='mihaibao-design-image'/> */}
       </div>

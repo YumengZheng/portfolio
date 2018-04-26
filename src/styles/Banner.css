@@ -18,7 +18,7 @@
   height: 25px;
   /* background-color: springgreen; */
   z-index: 1000000;
-  background: linear-gradient(to bottom right, #FF8086, #83E8FF);;
+  background: linear-gradient(to bottom right, #55515B, #CCE0F4);;
   border-radius: 3px;
 }
 
@@ -39,7 +39,7 @@
   overflow:hidden;
   -webkit-transition: 1s;
   transition: 1s;
-  clip-path: inset(0 50.9% 0 0);
+  clip-path: inset(0 51% 0 0);
   /* border: 1px solid yellow; */
   cursor: pointer;
 }
@@ -50,6 +50,7 @@
 
 .banner-left-cover-click {
   clip-path: inset(0 0 0 0);
+  background-color:rgb(71, 70, 71);
 }
 
 .banner-left-move-off-screen{
@@ -177,6 +178,7 @@
 
 .banner-right-cover-click {
   clip-path: inset(0 0 0 0);
+  background-color:rgb(71, 70, 71);
 }
 
 .banner-right-move-off-screen{

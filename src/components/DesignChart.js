@@ -14,16 +14,17 @@ class DesignChart extends Component {
             label: 'Design Skill',
             data: [7, 6, 5, 3, 2, 2],
             backgroundColor: [
-              'rgba(255, 99, 132, 0.2)',
-              'rgba(54, 162, 235, 0.2)',
-              'rgba(255, 206, 86, 0.2)',
-              'rgba(75, 192, 192, 0.2)',
-              'rgba(153, 102, 255, 0.2)',
-              'rgba(255, 159, 64, 0.2)',
-              'rgba(255, 159, 64, 0.2)',
-              'rgba(255, 206, 86, 0.2)',
-              'rgba(255, 99, 132, 0.2)'
-          ]
+              'rgba(255, 99, 132, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(153, 102, 255, 1)',
+              'rgba(255, 159, 64, 1)',
+              'rgba(255, 159, 64, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(255, 99, 132, 1)'
+          ],
+          borderColor: 'rgb(255,255,255)'
           }
         ]
       }
@@ -46,9 +47,11 @@ class DesignChart extends Component {
             yAxes: [{
               stacked:true,
               gridLines:{
-                display:false
+                display:false,
+                color: 'rgb(255,255,255)'
               },
               ticks: {
+                fontColor: 'rgb(255,255,255)',
                 beginAtZero: true,
                 max: 8,
                 min: 0,
@@ -61,7 +64,11 @@ class DesignChart extends Component {
               stacked:true,
               gridLines:{
                 display:false,
-                offsetGridLines: false
+                offsetGridLines: false,
+                color: 'rgb(255,255,255)'
+              },
+              ticks: {
+                fontColor: 'rgb(255,255,255)'
               },
               barPercentage: 1.15
             }],

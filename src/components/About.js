@@ -98,9 +98,9 @@ class About extends Component {
         <div className='about-part-four'>
             <p className='about-part-four-text'>My latest design project</p>
             <div className="design-projects-outter-box">
+              <LastestProject url="http://localhost:3000/mihaibao" image="images/mihaibaoshot2.png" name="Mihaibao" tech="Illustrator, Photoshop"/>
               <LastestProject url="http://localhost:3000/emma" image="images/emmashot1.png" name="Emma App" tech="Illustrator, Photoshop"/>
-              <LastestProject url="http://localhost:3000/mihaibao" image="images/mihaibaoshot.png" name="Mihaibao" tech="Illustrator, Photoshop"/>
-              <LastestProject url="http://zhengyumeng.com/" image="images/fashion1.png" name="Fashion Design" tech="Javascript, JQuery, Html, Css"/>
+              <LastestProject url="http://zhengyumeng.com/" image="images/fashion1.png" name="Fashion Design Portfolio" tech="Illustrator, Photoshop, Html, Css"/>
             </div>   
         </div>  
         <div className='about-part-five'>
@@ -117,9 +117,9 @@ class About extends Component {
         <div className='about-part-seven'>
             <p className='about-part-seven-text'>You can contact me through email<br/>or find me on Linkedin and Github</p>
             <div className='about-part-seven-image-outter-box'>
-              <div className='about-part-seven-image-box' ><img className='about-part-seven-image' src="images/flight.png" alt="flight-image" /></div>
-              <div className='about-part-seven-image-box'><img className='about-part-seven-image' src="images/linkedin.png" alt="linkedin-image" /></div>
-              <div className='about-part-seven-image-box'><img className='about-part-seven-image' src="images/github.png" alt="github-image" /></div>
+              <a href="mailto:zhengyumeng1125@gmail.com?Subject=Hello%20again" target="_top" className='about-part-seven-image-box'><img className='about-part-seven-image' src="images/flight.png" alt="flight-image" /></a>
+              <a href='https://www.linkedin.com/in/ivy-zheng-8a604891/' target="_blank" className='about-part-seven-image-box'><img className='about-part-seven-image' src="images/linkedin.png" alt="linkedin-image" /></a>
+              <a href='https://github.com/YumengZheng' target="_blank" className='about-part-seven-image-box'><img className='about-part-seven-image' src="images/github.png" alt="github-image" /></a>
             </div>
         </div>
         <div className='about-part-eight'>

@@ -8,28 +8,29 @@
 }
 .right-arrow-outter-box{
   height: 100%;
-  width: 15%;
-  float: left;
+  width: 8%;
+  float: right;
   display: flex;
   /* border: 1px solid blue; */
 }
 #right-arrow{
   display: block;
-  width: 90%;
-  margin:auto auto;
+  width: 50%;
+  /* object-fit: contain; */
+  margin:30px auto auto;
   /* border: 1px solid blue; */
 }
 .left-arrow-outter-box{
   height: 100%;
-  width: 15%;
-  float: right;
+  width: 8%;
+  float: left;
   display: flex;
-  /* border: 1px solid blue; */
+  /* border: 1px solid blue;  */
 }
 #left-arrow{
   display: block;
-  width: 90%;
-  margin:auto auto;
+  width: 50%;
+  margin:30px auto auto;
   z-index: 100;
   /* border: 1px solid blue; */
 }

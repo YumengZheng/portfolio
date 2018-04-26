@@ -24,7 +24,8 @@ class DesignChart extends Component {
               'rgba(255, 206, 86, 1)',
               'rgba(255, 99, 132, 1)'
           ],
-          borderColor: 'rgb(255,255,255)'
+          borderColor: 'rgb(255,255,255)',
+          color: 'rgb(255,255,255)'
           }
         ]
       }
@@ -42,6 +43,12 @@ class DesignChart extends Component {
           maintainAspectRatio:false,
           animation: {
             duration:1000
+          },
+          legend: {
+            labels: {
+                fontColor: "white",
+                fontSize: 18
+            }
           },
           scales: {
             yAxes: [{

@@ -43,6 +43,12 @@ class DesignChart extends Component {
           animation: {
             duration:2000
           },
+          legend: {
+            labels: {
+                fontColor: "white",
+                fontSize: 18
+            }
+          },
           scales: {
             yAxes: [{
               stacked:true,

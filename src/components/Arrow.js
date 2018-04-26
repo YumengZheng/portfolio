@@ -23,9 +23,7 @@ class Arrow extends Component {
       rightArrow = <img src="images/arrow1.png" alt="arrow" id="right-arrow" onClick={this.handleLeftArrowClick}/>
     }
     let leftArrow;
-    
     if(this.props.leftShowArrow){
-      console.log('passs')
       leftArrow = <img src="images/arrow2.png" alt="arrow" id="left-arrow" onClick={this.handleRightArrowClick} />
     }
     return (

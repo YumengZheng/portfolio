@@ -144,22 +144,32 @@
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  /* border: 1px solid blue; */
+  /* border: 1px solid red; */
 }
 .about-part-five-tv-box{
-  width: 28%;
+  width: 23%;
   height: auto;
-  margin: 80px 0 0 125px;
+  margin: 79px 0 0 125px;
   display: block;
   /* border: 1px solid blue; */
   z-index: 100;
+  position: absolute;
 }
-.about-part-five-image-tv{
+.about-part-five-image-gif{
   width: 100%;
   height: auto;
   display: block;
   object-fit: contain;
+  margin-top: 20px;
   /* border: 1px solid blue; */
+}
+.about-part-five-image-tv{
+  width: 35%;
+  height: 270px;
+  margin: 40px 0 0 95px;
+  display: block;
+  /* border: 1px solid blue; */
+  z-index: 99;
 }
 .about-part-five-text{
   display: block;

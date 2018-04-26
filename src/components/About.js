@@ -143,8 +143,8 @@ class About extends Component {
             </div>   
         </div>  
         <div className='about-part-five'>
-            <a href="https://www.youtube.com/watch?v=TYmfoCp1S44" target="_blank" className="about-part-five-tv-box"><img src="https://media.giphy.com/media/8MAxZ9Z9aqW40M5Jw7/giphy.gif"  className='about-part-five-image-tv' frameBorder="0"  allowFullScreen /></a>
-            {/* <img src='./images/tv.png' /> */}
+            <a href="https://www.youtube.com/watch?v=TYmfoCp1S44" target="_blank" className="about-part-five-tv-box"><img src="https://media.giphy.com/media/8MAxZ9Z9aqW40M5Jw7/giphy.gif"  className='about-part-five-image-gif' frameBorder="0"  allowFullScreen /></a>
+            <img className='about-part-five-image-tv' src='./images/tv.png' />
             <p className='about-part-five-text'>I like dancing</p>
             <img className='about-part-five-image-dance' src="images/dance.png" alt="dance-image" />
         </div>

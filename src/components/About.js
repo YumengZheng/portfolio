@@ -67,8 +67,8 @@ class About extends Component {
             ctx.moveTo(870,2260);
             ctx.lineTo(1050,2260);
             ctx.lineTo(1050,2500);
-            ctx.lineTo(880,2500);
-            ctx.moveTo(555,2615);
+            ctx.lineTo(875,2500);
+            ctx.moveTo(555,2620);
             ctx.lineTo(555,2750);
             ctx.moveTo(400,2750);
             ctx.lineTo(800,2750);
@@ -166,7 +166,7 @@ class About extends Component {
             <p className='about-part-eight-text-two'>Back to the top</p>
             <div className='about-part-eight-arrow' onClick={this.handleBottomArrowClick}></div>
         </div>
-            <canvas id="canvas" width="1300" height="3320">fall back</canvas>
+            <canvas id="canvas" width="1300" height="2840">fall back</canvas>
       </div>
     );
   }

@@ -52,7 +52,7 @@ class BannerLeft extends Component {
 
   controlToolTip(){
     let toolTip
-    this.state.onHover? toolTip = 'tooltip': toolTip = 'tooltip-none'
+    this.state.onHover? toolTip = 'tooltip-left': toolTip = 'tooltip-none'
     return <div id='tooltip' className= {toolTip} ><span className='inner-box'>Click to see design skills</span></div>
   }
 

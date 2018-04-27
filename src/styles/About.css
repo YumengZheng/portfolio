@@ -105,6 +105,7 @@
   z-index: 100;
   /* border: 1px solid blue; */
 }
+
 .about-part-three-image-tee{
   width:100%;
   margin: auto;
@@ -171,6 +172,7 @@
   /* border: 1px solid blue; */
   z-index: 99;
 }
+
 .about-part-five-text{
   display: block;
   max-height: 30%;

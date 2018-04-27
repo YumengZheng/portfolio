@@ -10,7 +10,7 @@
 
 
 /* tootip */
-.tooltip{
+.tooltip-right{
   display: flex;
   color: white;
   position: fixed;
@@ -18,7 +18,18 @@
   height: 25px;
   /* background-color: springgreen; */
   z-index: 1000000;
-  background: linear-gradient(to bottom right, #474647, #CCE0F4);;
+  background: linear-gradient(to bottom right, #474647, #8ee0f6);;
+  border-radius: 3px;
+}
+.tooltip-left{
+  display: flex;
+  color: white;
+  position: fixed;
+  width: 200px;
+  height: 25px;
+  /* background-color: springgreen; */
+  z-index: 1000000;
+  background: linear-gradient(to bottom right, #474647, #baa67b);;
   border-radius: 3px;
 }
 

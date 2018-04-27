@@ -39,7 +39,7 @@ class Nav extends Component {
     return (
       <div className="nav" id='nav'>
         <div className="logo-box">
-          <a href="http://localhost:3000/" className="logo-inner-box"><img src="images/logo.png" className="logo"/></a>
+          <a href="http://ivyzheng.us/" className="logo-inner-box"><img src="images/logo.png" className="logo"/></a>
         </div>
         <div className="nav-outter-box">
           {this.showNavOptions()}

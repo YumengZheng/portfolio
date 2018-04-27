@@ -137,8 +137,8 @@ class About extends Component {
         <div className='about-part-four' id='portfolio'>
             <p className='about-part-four-text'>My latest design project</p>
             <div className="design-projects-outter-box">
-              <LastestProject url="http://localhost:3000/mihaibao" image="images/mihaibaoshot1.png" name="Mihaibao" tech="Illustrator, Photoshop"/>
-              <LastestProject url="http://localhost:3000/emma" image="images/emmashot1.png" name="Emma App" tech="Illustrator, Photoshop"/>
+              <LastestProject url="http://ivyzheng.us/#/mihaibao/" image="images/mihaibaoshot1.png" name="Mihaibao" tech="Illustrator, Photoshop"/>
+              <LastestProject url="http://ivyzheng.us/#/emma/" image="images/emmashot1.png" name="Emma App" tech="Illustrator, Photoshop"/>
               <LastestProject url="http://zhengyumeng.com/" image="images/fashion1.png" name="Fashion Design Portfolio" tech="Illustrator, Photoshop, Html, Css"/>
             </div>   
         </div>  

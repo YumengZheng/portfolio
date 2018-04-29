@@ -1,3 +1,4 @@
+/* @media only screen and (min-width: 1240px) { */
 .about{
   width:100%;
   height: 2710px;
@@ -310,4 +311,4 @@
   width: 100%;
   /* border: 1px solid black; */
 }
-
+/* } */

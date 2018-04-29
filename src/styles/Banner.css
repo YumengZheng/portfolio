@@ -106,23 +106,23 @@
   display: block;
   font-size: 3em;
   color: #474647;
-  margin: 90px 0 0 155px;
+  margin: 7.2% 0 0 12.5%;
 }
 #ps{
   display: block;
-  margin: 380px 0 0 330px;
+  margin: 30.6% 0 0 26.6%;
   z-index: -1;
 }
 
 #ai{
   display: block;
-  margin: 260px 0 0 120px;
+  margin: 20.9% 0 0 9.6%;
   z-index: -1;
 }
 
 #id{
   display: block;
-  margin: 485px 0 0 180px;
+  margin: 39% 0 0 14.5%;
   z-index: -1;
 }
 
@@ -231,14 +231,14 @@
   display: block;
   font-size: 3em;
   color: #474647;
-  margin: 90px 0 0 870px;
+  margin: 7.2% 0 0 70%;
 }
 
 #mongo{
   display: block;
   font-size: 3.2em;
   color: #CDE0D1;
-  margin: 430px 0 0 740px;
+  margin: 34.6% 0 0 60%;
   z-index: -1;
   font-family: 'Nunito', sans-serif;
 }
@@ -247,7 +247,7 @@
   display: block;
   font-size: 4em;
   color: #8BE0F7;
-  margin: 260px 0 0 880px;
+  margin: 21% 0 0 71%;
   z-index: -1;
   font-family: 'Nunito', sans-serif;
 }
@@ -256,7 +256,7 @@
   display: block;
   font-size: 2.5em;
   color: #D5CCE5;
-  margin: 520px 0 0 880px;
+  margin: 42% 0 0 71%;
   z-index: -1;
   font-family: 'Nunito', sans-serif;
 }

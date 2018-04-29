@@ -125,7 +125,7 @@ class About extends Component {
         <div className='about-part-two'>
           <p className='about-part-two-text' id='projects'>My latest coding projects</p>
           <div className="coding-projects-outter-box" >
-              <LastestProject url="http://ivyzheng.us/mindsweeper/" image="images/mindsweeper.png" name="Mind Sweeper Game" tech="React, Redux, Javascript, Html, Css"/>   
+              <LastestProject url="http://ivyzheng.us/minesweeper/" image="images/minesweeper.png" name="Mine Sweeper Game" tech="React, Redux, Javascript, Html, Css"/>   
               <LastestProject url="http://pickawatermelon.com/" image="images/watermelon.png" name="Watermelon University" tech="Javascript, JQuery, Html, Css"/>
           </div>    
         </div>

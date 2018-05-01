@@ -115,8 +115,15 @@ class About extends Component {
 
   render() {
     this.canvas()
+    let aboutStyle = {}
+    if(415<=window.innerWidth<=1240){
+      aboutStyle = {
+        width: window.innerWidth,
+        height:window.innerWidth*2.2}
+    }
+
     return (
-      <div className='about' id='about'>
+      <div className='about' id='about' style={aboutStyle}>
           {this.showArrow()}
         <div className='about-part-one'>
             <p className='about-part-one-text'><span style={{fontSize: "2.5em"}}>I’m Ivy</span><br/>I am a software engineer based in San Francisco</p>

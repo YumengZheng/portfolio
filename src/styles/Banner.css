@@ -311,7 +311,6 @@
   .banner{
   position: relative;
   display: flex;
-  height: 550px;
   width: 100%;
   overflow: hidden;
   background-color: white;
@@ -624,7 +623,6 @@
   .banner{
   position: relative;
   display: flex;
-  height: 200px;
   width: 100%;
   overflow: hidden;
   background-color: white;

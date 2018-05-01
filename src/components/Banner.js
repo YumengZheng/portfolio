@@ -100,8 +100,13 @@ class Banner extends Component {
               rightShowArrow={this.state.rightShowArrow}
               />
     }
+    let bannerStyle = {}
+    if(window.innerWidth<=1240){
+      bannerStyle = {
+        height:window.innerWidth*0.48}
+    }
     return (
-        <div className="banner">
+        <div className="banner" style = {bannerStyle}>
          {arrow}
           <BannerLeft 
           show={this.state.showLeftImage}  

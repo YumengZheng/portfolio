@@ -81,8 +81,9 @@ class BannerLeft extends Component {
     if(this.state.onHover){
       findTooltipPosition = this.findTooltipPosition()
     }
+
     return (
-      <div className={this.props.leftBannerClass} 
+      <div className={this.props.leftBannerClass}  
            onClick={this.handleClick} 
            onMouseEnter={this.handleMouseEnter} 
            onMouseLeave={this.handleMouseLeave}

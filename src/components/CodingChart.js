@@ -32,6 +32,15 @@ class DesignChart extends Component {
     const yLabels = {
       0 : '', 2 : 'NEWBIE', 4 : 'TRYHARD', 6 : 'HACKER', 8 : 'NO-LIFE',
     }
+    let fontSize = 18;
+    let xfontSize = 12;
+    let yfontSize = 12;
+    // console.log('window',window.innerWidth)
+    if(window.innerWidth <= 600){
+      fontSize = 10;
+      xfontSize = 8;
+      yfontSize = 8;
+    }
     return (
       <div className="code-chart">
        <Bar
@@ -44,7 +53,7 @@ class DesignChart extends Component {
           legend: {
             labels: {
                 fontColor: "white",
-                fontSize: 18
+                fontSize: fontSize
             }
           },
           scales: {
@@ -55,6 +64,7 @@ class DesignChart extends Component {
                 color: 'rgb(255,255,255)'
               },
               ticks: {
+                fontSize: yfontSize,
                 fontColor: 'rgb(255,255,255)',
                 beginAtZero: true,
                 max: 8,
@@ -72,6 +82,7 @@ class DesignChart extends Component {
                 color: 'rgb(255,255,255)'
               },
               ticks: {
+                fontSize: xfontSize,
                 fontColor: 'rgb(255,255,255)',
               },
               barPercentage: 1.15

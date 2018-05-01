@@ -116,10 +116,17 @@ class About extends Component {
   render() {
     this.canvas()
     let aboutStyle = {}
-    if(415<=window.innerWidth<=1240){
+    console.log('w',window.innerWidth<1240)
+    if(415<=window.innerWidth && window.innerWidth<1240){
+      console.log('pass1')
       aboutStyle = {
         width: window.innerWidth,
         height:window.innerWidth*2.2}
+    } else if (window.innerWidth>=1240){
+      console.log('pass2')
+      aboutStyle = {
+        width: '1240px',
+        height: '2710px'}
     }
 
     return (

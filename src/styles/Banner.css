@@ -307,8 +307,9 @@
 }
 }
 /* aaa */
-@media (min-width: 415px) and (max-width: 1240px){
+@media (min-width: 500px) and (max-width: 1240px){
   .banner{
+  width: 100%;
   position: relative;
   display: flex;
   width: 100%;
@@ -619,8 +620,9 @@
 }
 
 /* bbb */
-@media (min-width: 0px) and (max-width: 414px){
+@media (min-width: 0px) and (max-width: 500px){
   .banner{
+  width:100%;
   position: relative;
   display: flex;
   width: 100%;

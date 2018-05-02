@@ -5,19 +5,18 @@ import $ from 'jquery';
 
 const LastestProject = ({url, image, name, tech}) =>{
   let projectStyle = {}
-  console.log(window.innerWidth)
-  if(500<=window.innerWidth && window.innerWidth<1240){
+  if(700<window.innerWidth && window.innerWidth<1240){
      projectStyle = {
-      width: '260px',
-      height: '220px'}
+      width: window.innerWidth*0.25,
+      height: window.innerWidth*0.2}
   } else if (window.innerWidth>=1240){
      projectStyle = {
       width: '300px',
       height: '250px'}
-  } else if(window.innerWidth < 500){
+  } else if(window.innerWidth <= 700){
     projectStyle = {
-      width: '80%',
-      height: window.innerWidth*0.5}
+      width: window.innerWidth*0.5,
+      height: window.innerWidth*0.44}
   }
     return (
       <div className="project-box" style={projectStyle}>

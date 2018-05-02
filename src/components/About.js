@@ -172,27 +172,45 @@ class About extends Component {
 
   render() {
     let canvas;
-    if(500<=window.innerWidth){
+    if(700<window.innerWidth){
       this.canvas()
       canvas =  <canvas id="canvas" width="1300" height="2840">fall back</canvas>
-    } else if (500>window.innerWidth){
+    } else if (window.innerWidth<=700){
       this.canvasPhone()
       canvas =  <canvas id="canvas"  width="800" height="4805">fall back</canvas>
     }
-    console.log(window.innerWidth*5.8)
+    console.log(window.innerWidth)
     let aboutStyle = {}
-    if(500<=window.innerWidth && window.innerWidth<1240){
+    if (window.innerWidth>=1240){
       aboutStyle = {
-        width: window.innerWidth,
-        height:window.innerWidth*2.2}
-    } else if (window.innerWidth>=1240){
-      aboutStyle = {
+        fontSize: '1.4em',
         width: '1240px',
         height: '2710px'}
-    } else if (window.innerWidth<500){
+    } else if(800<=window.innerWidth && window.innerWidth<1240){
       aboutStyle = {
+        fontSize: '1.1em',
+        width: window.innerWidth,
+        height:window.innerWidth*2.2}
+    }  else if (700<=window.innerWidth && window.innerWidth<800){
+      aboutStyle = {
+        fontSize: '0.8em',
+        width: window.innerWidth,
+        height:window.innerWidth*2.2}
+    } else if (600<=window.innerWidth && window.innerWidth<700){
+      aboutStyle = {
+        fontSize: '0.6em',
         width: '100%',
-        height: window.innerWidth*5.8}
+        height: window.innerWidth*5.9}
+    } else if (400<=window.innerWidth && window.innerWidth<600){
+        aboutStyle = {
+          fontSize: '0.6em',
+          width: '100%',
+          height: window.innerWidth*5.9}
+    } else if (window.innerWidth<400){
+        aboutStyle = {
+          fontSize: '0.3em',
+          width: '100%',
+          height: window.innerWidth*5.8}
     }
 
    let tvStyle = {
@@ -200,6 +218,7 @@ class About extends Component {
      backgroundSize: 'contain',
      backgroundRepeat: 'no-repeat'
    }
+ 
     return (
       <div className='about' id='about' style={aboutStyle}>
           {this.showArrow()}

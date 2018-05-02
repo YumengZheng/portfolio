@@ -54,7 +54,7 @@
     /* border: 1px solid red; */
   }
 }
-@media (min-width: 500px) and (max-width: 1240px){
+@media (min-width: 600px) and (max-width: 1240px){
   .nav{
     display: flex;
     background-color:rgb(71, 70, 71);
@@ -111,7 +111,7 @@
     /* border: 1px solid red; */
   }
 }
-@media (min-width: 0px) and (max-width: 500px){
+@media (min-width: 0px) and (max-width: 600px){
   .nav{
     display: flex;
     background-color:rgb(71, 70, 71);

@@ -307,7 +307,7 @@
 }
 }
 /* aaa */
-@media (min-width: 500px) and (max-width: 1240px){
+@media (min-width: 700px) and (max-width: 1240px){
   .banner{
   width: 100%;
   position: relative;
@@ -330,6 +330,7 @@
   z-index: 1000000;
   background: linear-gradient(to bottom right, #474647, #8ee0f6);;
   border-radius: 3px;
+  display: none;
 }
 .tooltip-left{
   display: flex;
@@ -341,6 +342,7 @@
   z-index: 1000000;
   background: linear-gradient(to bottom right, #474647, #baa67b);;
   border-radius: 3px;
+  display: none;
 }
 
 .tooltip-none{
@@ -620,7 +622,7 @@
 }
 
 /* bbb */
-@media (min-width: 0px) and (max-width: 500px){
+@media (min-width: 0px) and (max-width: 700px){
   .banner{
   width:100%;
   position: relative;
@@ -643,6 +645,7 @@
   z-index: 1000000;
   background: linear-gradient(to bottom right, #474647, #8ee0f6);;
   border-radius: 3px;
+  display: none;
 }
 .tooltip-left{
   display: flex;
@@ -654,6 +657,7 @@
   z-index: 1000000;
   background: linear-gradient(to bottom right, #474647, #baa67b);;
   border-radius: 3px;
+  display: none;
 }
 
 .tooltip-none{

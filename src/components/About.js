@@ -95,7 +95,7 @@ class About extends Component {
 						ctx.lineJoin="miter";
             ctx.beginPath();
             ctx.setLineDash([5,5]);
-						ctx.moveTo(397,260);
+						ctx.moveTo(397,250);
             ctx.lineTo(397,310);
             ctx.moveTo(397,350);
             ctx.lineTo(397,1320);
@@ -117,14 +117,11 @@ class About extends Component {
             ctx.lineTo(397,3710);
             ctx.moveTo(397,3785);
             ctx.lineTo(397,3830);
-            ctx.moveTo(180,3930);
-            ctx.lineTo(180,3830);
+            ctx.moveTo(180,3830);
             ctx.lineTo(614,3830);
-            ctx.lineTo(614,4000);
-            ctx.moveTo(180,4050);
-            ctx.lineTo(180,4160);
             ctx.lineTo(614,4160);
-            ctx.lineTo(614,4050);
+            ctx.lineTo(180,4160);
+            ctx.lineTo(180,3830);
             ctx.moveTo(397,4160);
             ctx.lineTo(397,4220);
             ctx.moveTo(397,4300);

@@ -4,19 +4,28 @@ import '../styles/Project.css';
 import $ from 'jquery';
 
 const LastestProject = ({url, image, name, tech}) =>{
-  let projectStyle = {}
-  if(700<window.innerWidth && window.innerWidth<1240){
-     projectStyle = {
-      width: window.innerWidth*0.25,
-      height: window.innerWidth*0.2}
-  } else if (window.innerWidth>=1240){
-     projectStyle = {
-      width: '300px',
-      height: '250px'}
-  } else if(window.innerWidth <= 700){
+  const width = document.body.clientWidth 
+  let projectStyle;
+  if (width>=1240){
     projectStyle = {
-      width: window.innerWidth*0.5,
-      height: window.innerWidth*0.44}
+     width: '300px',
+     height: '250px',
+     fontSize: '0.7em'}
+  } else if(700<width && width<1240){
+     projectStyle = {
+      width: width*0.25,
+      height: width*0.2,
+      fontSize: '0.7em'}
+  } else if(600<width && width<700){
+    projectStyle = {
+      width: width*0.6,
+      height: width*0.5,
+     fontSize: '1.2em'}
+  } else if(width <= 600){
+    projectStyle = {
+      width: width*0.6,
+      height: width*0.5,
+      fontSize: '0.9em'}
   }
     return (
       <div className="project-box" style={projectStyle}>

@@ -17,7 +17,7 @@ const LastestProject = ({url, image, name, tech}) =>{
   } else if(window.innerWidth < 500){
     projectStyle = {
       width: '80%',
-      height: window.innerWidth*0.6}
+      height: window.innerWidth*0.5}
   }
     return (
       <div className="project-box" style={projectStyle}>

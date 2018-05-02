@@ -95,14 +95,47 @@ class About extends Component {
 						ctx.lineJoin="miter";
             ctx.beginPath();
             ctx.setLineDash([5,5]);
-						ctx.moveTo(145,160);
-            ctx.lineTo(145,220);
-            ctx.lineTo(650,220);
-            ctx.lineTo(650,170);
-            ctx.moveTo(397,220);
-            ctx.lineTo(397,275);
-            ctx.moveTo(397,320);
-            ctx.lineTo(397,1300);
+						ctx.moveTo(397,260);
+            ctx.lineTo(397,310);
+            ctx.moveTo(397,350);
+            ctx.lineTo(397,1320);
+            ctx.moveTo(397,1365);
+            ctx.lineTo(397,1400);
+            ctx.moveTo(180,1500);
+            ctx.lineTo(180,1400);
+            ctx.lineTo(614,1400);
+            ctx.lineTo(614,1500);
+            ctx.moveTo(180,1630);
+            ctx.lineTo(180,1700);
+            ctx.lineTo(614,1700);
+            ctx.lineTo(614,1630);
+            ctx.moveTo(397,1700);
+            ctx.lineTo(397,1750);
+            ctx.moveTo(397,1790);
+            ctx.lineTo(397,3230);
+            ctx.moveTo(397,3260);
+            ctx.lineTo(397,3710);
+            ctx.moveTo(397,3785);
+            ctx.lineTo(397,3830);
+            ctx.moveTo(180,3930);
+            ctx.lineTo(180,3830);
+            ctx.lineTo(614,3830);
+            ctx.lineTo(614,4000);
+            ctx.moveTo(180,4050);
+            ctx.lineTo(180,4160);
+            ctx.lineTo(614,4160);
+            ctx.lineTo(614,4050);
+            ctx.moveTo(397,4160);
+            ctx.lineTo(397,4220);
+            ctx.moveTo(397,4300);
+            ctx.lineTo(397,4350);
+            ctx.moveTo(140,4350);
+            ctx.lineTo(654,4350);
+            ctx.lineTo(654,4640);
+            ctx.lineTo(140,4640);
+            ctx.lineTo(140,4350);
+            ctx.moveTo(397,4640);
+            ctx.lineTo(397,4740);
             ctx.stroke();	
           }
 				}
@@ -146,7 +179,7 @@ class About extends Component {
     } else if (500>window.innerWidth){
       console.log('pass2')
       this.canvasPhone()
-      canvas =  <canvas id="canvas"  width="800" height="2840">fall back</canvas>
+      canvas =  <canvas id="canvas"  width="800" height="4805">fall back</canvas>
     }
     let aboutStyle = {}
     if(500<=window.innerWidth && window.innerWidth<1240){
@@ -160,10 +193,14 @@ class About extends Component {
     } else if (window.innerWidth<500){
       aboutStyle = {
         width: '100%',
-        height: '2710px'}
+        height: window.innerWidth*5.8}
     }
 
-
+   let tvStyle = {
+     backgroundImage: "url('images/tv.png')",
+     backgroundSize: 'contain',
+     backgroundRepeat: 'no-repeat'
+   }
     return (
       <div className='about' id='about' style={aboutStyle}>
           {this.showArrow()}
@@ -194,15 +231,16 @@ class About extends Component {
             </div>   
         </div>  
         <div className='about-part-five'>
-            <a href="https://www.youtube.com/watch?v=TYmfoCp1S44" target="_blank" className="about-part-five-tv-box"><img src="https://media.giphy.com/media/8MAxZ9Z9aqW40M5Jw7/giphy.gif"  className='about-part-five-image-gif' frameBorder="0"  allowFullScreen /></a>
-            <img className='about-part-five-image-tv' src='./images/tv.png' />
+            <a href="https://www.youtube.com/watch?v=TYmfoCp1S44" target="_blank" className="about-part-five-tv-box" style={tvStyle}><img src="https://media.giphy.com/media/8MAxZ9Z9aqW40M5Jw7/giphy.gif"  className='about-part-five-image-gif' frameBorder="0"  allowFullScreen /></a>
             <p className='about-part-five-text'>I like dancing</p>
             <img className='about-part-five-image-dance' src="images/dance.png" alt="dance-image" />
         </div>
         <div className='about-part-six'>
             <p className='about-part-six-text'>I am an expert at eatting Chinese food <br/>and playing Exploding Kittens</p>
-            <img className='about-part-six-image-game' src="images/game.png" alt="game-image" />
-            <img className='about-part-six-image-food' src="images/food.png" alt="food-image" />
+            <div className='about-part-six-image-box'>
+              <img className='about-part-six-image-game' src="images/game.png" alt="game-image" />
+              <img className='about-part-six-image-food' src="images/food.png" alt="food-image" />
+            </div>
         </div>
         <div className='about-part-seven' id='contact'>
             <p className='about-part-seven-text'>You can contact me through email<br/>or find me on Linkedin and Github</p>

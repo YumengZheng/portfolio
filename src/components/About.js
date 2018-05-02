@@ -171,52 +171,60 @@ class About extends Component {
   }
 
   render() {
+    const width = document.body.clientWidth 
     let canvas;
-    if(700<window.innerWidth){
+    if(700<width){
       this.canvas()
       canvas =  <canvas id="canvas" width="1300" height="2840">fall back</canvas>
-    } else if (window.innerWidth<=700){
+    } else if (width<=700){
       this.canvasPhone()
-      canvas =  <canvas id="canvas"  width="800" height="4805">fall back</canvas>
+      canvas =  <canvas id="canvas"  width="800" height="4800">fall back</canvas>
     }
-    console.log(window.innerWidth)
+    console.log('client',window.innerWidth )
+    console.log('client',document.body.clientWidth )
     let aboutStyle = {}
-    if (window.innerWidth>=1240){
+    if (width>=1240){
       aboutStyle = {
         fontSize: '1.4em',
         width: '1240px',
         height: '2710px'}
-    } else if(800<=window.innerWidth && window.innerWidth<1240){
+    } else if(1000<=width && width<1240){
       aboutStyle = {
         fontSize: '1.1em',
-        width: window.innerWidth,
-        height:window.innerWidth*2.2}
-    }  else if (700<=window.innerWidth && window.innerWidth<800){
+        width: '100%',
+        height: width*2.2}
+    } else if(900<=width && width<1000){
+      aboutStyle = {
+        fontSize: '1em',
+        width: '100%',
+        height: width*2.2}
+    } else if (700<=width && width<900){
       aboutStyle = {
         fontSize: '0.8em',
-        width: window.innerWidth,
-        height:window.innerWidth*2.2}
-    } else if (600<=window.innerWidth && window.innerWidth<700){
-      aboutStyle = {
-        fontSize: '0.6em',
         width: '100%',
-        height: window.innerWidth*5.9}
-    } else if (400<=window.innerWidth && window.innerWidth<600){
+        height: width*2.2}
+    } else if (500<=width && width<700){
+      aboutStyle = {
+        fontSize: '0.8em',
+        width: '100%',
+        height: width*6}
+    } else if (400<=width && width<500){
+        aboutStyle = {
+          fontSize: '0.7em',
+          width: '100%',
+          height: width*6}
+    } else if (width<400){
         aboutStyle = {
           fontSize: '0.6em',
           width: '100%',
-          height: window.innerWidth*5.9}
-    } else if (window.innerWidth<400){
-        aboutStyle = {
-          fontSize: '0.3em',
-          width: '100%',
-          height: window.innerWidth*5.8}
+          height: width*6}
     }
 
    let tvStyle = {
      backgroundImage: "url('images/tv.png')",
      backgroundSize: 'contain',
-     backgroundRepeat: 'no-repeat'
+     backgroundRepeat: 'no-repeat',
+     backgroundPosition: 'center' 
    }
  
     return (
@@ -234,7 +242,7 @@ class About extends Component {
           </div>    
         </div>
         <div className='about-part-three'>
-            <p className='about-part-three-text'>I design websites and t-shirts</p>
+            <div className='about-part-three-text-box'><p className='about-part-three-text'>I design websites and t-shirts</p></div>
             <div className='about-part-three-images'>
               <img className='about-part-three-image-web' src="images/web.png" alt="web-image" />
               <a href="https://www.ivytees.com/" className='about-part-three-image-tee-box'  target="_blank" ><img className='about-part-three-image-tee' src="images/tee.png" alt="tee-image" /></a>
@@ -250,7 +258,7 @@ class About extends Component {
         </div>  
         <div className='about-part-five'>
             <a href="https://www.youtube.com/watch?v=TYmfoCp1S44" target="_blank" className="about-part-five-tv-box" style={tvStyle}><img src="https://media.giphy.com/media/8MAxZ9Z9aqW40M5Jw7/giphy.gif"  className='about-part-five-image-gif' frameBorder="0"  allowFullScreen /></a>
-            <p className='about-part-five-text'>I like dancing</p>
+            <div className='about-part-five-text-box'><p className='about-part-five-text'>I like dancing</p></div>
             <img className='about-part-five-image-dance' src="images/dance.png" alt="dance-image" />
         </div>
         <div className='about-part-six'>

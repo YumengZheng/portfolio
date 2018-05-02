@@ -1,4 +1,4 @@
-@media screen and (min-width: 1240px){ 
+@media screen and (min-width: 1280px){ 
 .about{
   display: flex;
   position: relative;
@@ -78,58 +78,67 @@
 }
 
 /* part three */
-.about-part-three{
-  width: 80%;
-  height: 260px;
-  display: flex;
-  margin: 20px auto 0;
-  flex-direction: row; 
-  /* border: 1px solid blue; */
-}
-.about-part-three-text{
-  width: 50%;
-  height: auto;
-  display: block;
-  margin-top: 55px;
-  /* border: 1px solid blue; */
-}
-.about-part-three-images{
-  width: 50%;
-  margin-top:3%; 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* border: 1px solid blue; */
-}
-.about-part-three-image-web{
-  width:35%;
-  height:auto;
-  object-fit: contain;
-  margin-left:4%; 
-  /* border: 1px solid blue; */
-}
-.about-part-three-image-tee-box{
-  width:35%;
-  height:auto;
-  display: flex;
-  z-index: 100;
-  margin-right:6%; 
-  /* border: 1px solid blue; */
-}
+  .about-part-three{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    margin: 3% auto 0;
+    flex-direction: row; 
+    /* border: 1px solid blue;  */
+  }
+  .about-part-three-text-box{
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-top: 4%;
+    /* border: 1px solid blue; */
+  }
+  .about-part-three-text{
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+    margin: auto;
+    /* border: 1px solid blue; */
+  }
+  .about-part-three-images{
+    width: 60%;
+    margin-top:2%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 1px solid blue; */
+  }
+  .about-part-three-image-web{
+    width:35%;
+    height:auto;
+    object-fit: contain;
+    margin-left:13%; 
+    /* border: 1px solid blue; */
+  }
+  .about-part-three-image-tee-box{
+    width:35%;
+    height:auto;
+    display: flex;
+    z-index: 100;
+    margin-right:14.5%; 
+    /* border: 1px solid blue; */
+  }
 
-.about-part-three-image-tee{
-  width:100%;
-  margin: auto;
-  object-fit: contain;
-  /* border: 1px solid blue; */
-} 
+  .about-part-three-image-tee{
+    max-width:100%;
+    max-height:100%; 
+    margin: auto;
+    object-fit: contain;
+    /* border: 1px solid blue; */
+  } 
 
 /* part four */
 .about-part-four{
   width: 80%;
   height: 420px;
   display: flex;
-  margin: 55px auto 0;
+  margin: 75px auto 0;
   flex-direction: column;
   /* border: 1px solid blue; */
 }
@@ -317,7 +326,7 @@
 }
 }
 
-@media (min-width: 700px) and (max-width: 1240px){ 
+@media (min-width: 730px) and (max-width: 1280px){ 
   .about{
     display: flex;
     position: relative;
@@ -358,6 +367,7 @@
   .about-part-one-text{
     width: 54%;
     margin: 10% 0 0 0;
+
     /* border: 1px solid blue; */
   }
   .about-part-one-text-title{
@@ -380,8 +390,10 @@
     /* border: 1px solid blue; */
   }
   .about-part-two-text{
+    width: 50%;
     display: block;
-    margin: 0 0 0 56%;
+    margin: 0 0 0 43%;
+    text-align: center;
     /* border: 1px solid blue; */
   }
   
@@ -398,22 +410,30 @@
   
   /* part three */
   .about-part-three{
-    width: 80%;
+    width: 100%;
     height: 8%;
     display: flex;
-    margin: 0.5% auto;
+    margin: 1% auto 0;
     flex-direction: row; 
     /* border: 1px solid blue;  */
   }
-  .about-part-three-text{
-    width: 50%;
+  .about-part-three-text-box{
+    width: 40%;
     height: auto;
     display: block;
-    margin-top: 55px;
+    margin-top: 4%;
+    /* border: 1px solid blue; */
+  }
+  .about-part-three-text{
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+    margin: auto;
     /* border: 1px solid blue; */
   }
   .about-part-three-images{
-    width: 50%;
+    width: 60%;
     margin-top:3%; 
     display: flex;
     flex-direction: row;
@@ -424,7 +444,7 @@
     width:35%;
     height:auto;
     object-fit: contain;
-    margin-left:4%; 
+    margin-left:13%; 
     /* border: 1px solid blue; */
   }
   .about-part-three-image-tee-box{
@@ -432,12 +452,13 @@
     height:auto;
     display: flex;
     z-index: 100;
-    margin-right:6%; 
+    margin-right:14.5%; 
     /* border: 1px solid blue; */
   }
   
   .about-part-three-image-tee{
-    width:100%;
+    max-width:100%;
+    max-height:100%; 
     margin: auto;
     object-fit: contain;
     /* border: 1px solid blue; */
@@ -453,14 +474,15 @@
     /* border: 1px solid blue; */
   }
   .about-part-four-text{
+    width: 50%;
+    text-align: center;
     display: block;
-    width: auto;
-    margin: 1.5% 0 0 21.5%; 
+    margin: 1.5% 0 0 6%; 
     /* border: 1px solid blue; */
   }
   .design-projects-outter-box{
     width: 100%;
-    margin: 4% auto 0;
+    margin: 4.5% auto 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -479,7 +501,6 @@
   }
   .about-part-five-tv-box{
     width: 28%;
-    height: 260px;
     margin: 4% 0 0 7%;
     display: block;
     /* border: 1px solid blue; */
@@ -491,21 +512,20 @@
     height: auto;
     display: block;
     object-fit: contain;
-    margin: 15% auto 0;
+    margin: 17% auto;
     /* border: 1px solid blue; */
   }
-  .about-part-five-image-tv{
-    width: 35%;
-    margin: 5% 0 0 9%;
+  .about-part-five-text-box{
     display: block;
+    width: 25%;
+    margin: 15% 0 0 48%; 
     /* border: 1px solid blue; */
-    z-index: 99;
   }
-  
   .about-part-five-text{
     display: block;
-    max-height: 30%;
-    margin: 12% 0 0 55%;
+    width: 100%;
+    text-align: center;
+    margin: auto;
     /* border: 1px solid blue; */
   }
   
@@ -513,7 +533,7 @@
     width: 8%;
     height: 50%;
     object-fit: contain;
-    margin: 2% 0 0 7% ;
+    margin: 2% 0 0 3% ;
     /* border: 1px solid blue; */
     z-index: 100;
   }
@@ -529,8 +549,9 @@
   }
   .about-part-six-text{
     display: block;
-    width: 54%;
-    margin: 2% 0 0 46%;
+    width: 45%;
+    text-align: center;
+    margin: 3% 0 0 45%;
     /* border: 1px solid blue; */
   }
   .about-part-six-image-box{
@@ -566,7 +587,8 @@
   
   .about-part-seven-text{
     width: 60%;
-    margin: 1% 0 0 32%;
+    margin: 1.5% 0 0 20%;
+    text-align: center;
     /* border: 1px solid blue; */
   
   }
@@ -610,14 +632,16 @@
     width: 30%;
     height: 40px;
     display: block;
-    margin: 11.5% 0 0 6%;
+    margin: 13% 0 0 0;
+    text-align: center;
     /* border: 1px solid blue; */
   }
   .about-part-eight-text-two{
     width: 30%;
     height: 40px;
     display: block;
-    margin: 11.5%  0 0 31%;
+    margin: 13% 0 0 28%;
+    text-align: center;
     /* border: 1px solid blue; */
   }
   .about-part-eight-arrow{
@@ -641,12 +665,12 @@
   }
 }
 
-@media (min-width: 0px) and (max-width: 700px){ 
+@media (min-width: 0px) and (max-width: 730px){ 
     .about{
       display: flex;
       position: relative;
       flex-direction: column;
-      /* border: 1px solid red; */
+      border: 1px solid red;
       color:#474647;
       font-size: 0.8em;
       font-family: 'Poppins', sans-serif;
@@ -677,13 +701,13 @@
       display: flex;
       margin: 0 auto;
       flex-direction: column; 
-      border: 1px solid blue;
+      /* border: 1px solid blue; */
     }
     .about-part-one-text{
       width: 90%;
-      margin: 0 auto;
+      margin: 5% auto 0;
       text-align: center;
-      /* border: 1px solid blue; */
+      border: 1px solid blue;
     }
     .about-part-one-text-title{
       font-size: 1.5em;
@@ -707,8 +731,8 @@
     }
     .about-part-two-text{
       display: block;
-      margin: 12% auto 0;
-      /* border: 1px solid blue; */
+      margin: 11% auto 0;
+      border: 1px solid blue;
     }
     
     .coding-projects-outter-box{
@@ -735,8 +759,8 @@
       text-align: center;
       height: auto;
       display: block;
-      margin: 0 auto 0;
-      /* border: 1px solid blue; */
+      margin: 5% auto;
+      border: 1px solid blue;
     }
     .about-part-three-images{
       z-index: 101;
@@ -744,7 +768,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      margin: 12% auto;
+      margin: 6% auto;
       /* border: 1px solid blue; */
     } 
     .about-part-three-image-web{
@@ -772,7 +796,7 @@
     /* part four */
     .about-part-four{
       width: 80%;
-      height: 29%;
+      height: 31%;
       display: flex;
       margin: 0 auto;
       flex-direction: column;
@@ -781,8 +805,8 @@
     .about-part-four-text{
       display: block;
       width: auto;
-      margin: 9% auto 0; 
-      /* border: 1px solid blue; */
+      margin: 11% auto 0; 
+      border: 1px solid blue;
     }
     .design-projects-outter-box{
       width: 100%;
@@ -792,22 +816,21 @@
       flex-direction: column;
       justify-content: space-between;
       z-index: 100;
-      /* border: 1px solid red; */
+      border: 1px solid red;
     }
     
     /* part five */
     .about-part-five{
       width:80%;
-      height: 12%;
+      height: 11%;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
       border: 1px solid gray;
     }
     .about-part-five-tv-box{
-      width: 75%;
-      height: 80%;
-      margin: 17.8% auto 0;
+      width: 78%;
+      margin: 17% auto 0;
       display: block;
       /* border: 1px solid blue; */
       z-index: 100;
@@ -818,39 +841,29 @@
       height: auto;
       display: block;
       object-fit: contain;
-      margin: 40px auto 0;
+      margin: 17% auto;
       /* border: 1px solid blue; */
     }
-    .about-part-five-image-tv{
-      width: 35%;
-      height: 270px;
-      margin: 18% auto 0;
-      display: block;
-      /* border: 1px solid blue; */
-      z-index: 99;
+    .about-part-five-text-box{
+      width: 60%;
+      margin: -71% auto 0;
+      /* border: 1px solid blue;  */
     }
-    
     .about-part-five-text{
       display: block;
-      max-height: 30%;
-      margin: -73% auto 0;
+      text-align: center;
+      margin:auto;
       /* border: 1px solid blue; */
     }
     
     .about-part-five-image-dance{
-      width: 8%;
-      height: 50%;
-      object-fit: contain;
-      margin: 15px 0 0 50px ;
-      /* border: 1px solid blue; */
-      z-index: 100;
       display: none;
     }
     
     /* part six */
     .about-part-six{
       width: 80%;
-      height: 10%;
+      height: 9%;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -860,15 +873,15 @@
       display: block;
       width: 80%;
       text-align: center;
-      margin: 4.5% auto 0;
-      /* border: 1px solid blue; */
+      margin: 3% auto 0;
+      border: 1px solid blue;
     }
     .about-part-six-image-box{
       z-index: 101;
       width: 90%;
       display: flex;
       flex-direction: row;
-      margin: 20% auto 0;
+      margin: 16% auto 0;
       justify-content: space-between;
       /* border: 1px solid green; */
     }
@@ -895,9 +908,9 @@
     
     .about-part-seven-text{
       width: 80%;
-      margin: 7% auto 0;
+      margin: 15% auto 0;
       text-align: center;
-      /* border: 1px solid blue; */
+      border: 1px solid blue;
     
     }
     .about-part-seven-image-outter-box{
@@ -905,7 +918,8 @@
       display: flex;
       margin: 17% auto 0;
       flex-direction: row;
-      /* border: 1px solid blue; */
+      justify-content: space-between;
+      border: 1px solid blue;
     }
     .about-part-seven-image-box{
       flex:1;
@@ -933,28 +947,23 @@
       border: 1px solid blue;
     }
     .about-part-eight-text{
-      width: 100%;
-      height: 40%;
-      display: block;
-      margin: 10% auto 0;
-      /* border: 1px solid red; */
       display: none;
     }
     .about-part-eight-text-two{
       width: 100%;
       height: 20%;
       display: block;
-      margin: 17% auto 0;
+      margin: 12% auto 0;
       text-align: center;
-      /* border: 1px solid blue; */
+      border: 1px solid blue;
     }
     .about-part-eight-arrow{
       width: 80%;
       height: 20px;
-      margin: -20px auto 0;
+      margin: -5% auto 0;
       cursor: pointer;
       z-index: 100;
-      /* border: 1px solid green; */
+      border: 1px solid green;
     }
     
     /* canvas */
@@ -964,6 +973,6 @@
       position: absolute;
       z-index: 99;
       width: 100%;
-      /* border: 1px solid black; */
+      border: 1px solid black;
     }
 }

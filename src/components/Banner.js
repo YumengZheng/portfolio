@@ -46,7 +46,7 @@ class Banner extends Component {
         leftShowBackground:false,
         leftBannerClass:"banner-left-cover-click banner-left-move-off-screen"
       })
-    },500)
+    },1000)
     $("#left-face").addClass('left-face-shrink')
   }
 
@@ -65,7 +65,7 @@ class Banner extends Component {
         rightShowBackground:false,
         rightBannerClass:"banner-right-cover-click banner-right-move-off-screen"
       })
-    }, 500)
+    }, 1000)
     $("#right-face").addClass('right-face-shrink')
   }
 

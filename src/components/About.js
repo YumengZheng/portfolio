@@ -12,6 +12,7 @@ class About extends Component {
       showArrow:true
     }
     this.canvas = this.canvas.bind(this)
+    this.canvasPhone = this.canvasPhone.bind(this)
     this.handleArrowClick = this.handleArrowClick.bind(this)
     this.showArrow =  this.showArrow.bind(this)
     this.handleScroll = this.handleScroll.bind(this)
@@ -83,7 +84,30 @@ class About extends Component {
 				}
     }
   }
-
+  canvasPhone(){
+    window.onload = function() {
+				var theCanvas = document.getElementById('canvas');
+				if (theCanvas && theCanvas.getContext) {
+					var ctx = theCanvas.getContext("2d");
+          if (ctx) {
+						ctx.lineWidth = 0.6;
+						ctx.strokeStyle="black";
+						ctx.lineJoin="miter";
+            ctx.beginPath();
+            ctx.setLineDash([5,5]);
+						ctx.moveTo(145,160);
+            ctx.lineTo(145,220);
+            ctx.lineTo(650,220);
+            ctx.lineTo(650,170);
+            ctx.moveTo(397,220);
+            ctx.lineTo(397,275);
+            ctx.moveTo(397,320);
+            ctx.lineTo(397,1300);
+            ctx.stroke();	
+          }
+				}
+    }
+  }
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
   }
@@ -114,26 +138,37 @@ class About extends Component {
   }
 
   render() {
-    this.canvas()
-    let aboutStyle = {}
-    console.log('w',window.innerWidth<1240)
-    if(415<=window.innerWidth && window.innerWidth<1240){
+    let canvas;
+    if(500<=window.innerWidth){
       console.log('pass1')
+      this.canvas()
+      canvas =  <canvas id="canvas" width="1300" height="2840">fall back</canvas>
+    } else if (500>window.innerWidth){
+      console.log('pass2')
+      this.canvasPhone()
+      canvas =  <canvas id="canvas"  width="800" height="2840">fall back</canvas>
+    }
+    let aboutStyle = {}
+    if(500<=window.innerWidth && window.innerWidth<1240){
       aboutStyle = {
         width: window.innerWidth,
         height:window.innerWidth*2.2}
     } else if (window.innerWidth>=1240){
-      console.log('pass2')
       aboutStyle = {
         width: '1240px',
         height: '2710px'}
+    } else if (window.innerWidth<500){
+      aboutStyle = {
+        width: '100%',
+        height: '2710px'}
     }
+
 
     return (
       <div className='about' id='about' style={aboutStyle}>
           {this.showArrow()}
         <div className='about-part-one'>
-            <p className='about-part-one-text'><span style={{fontSize: "2.5em"}}>I’m Ivy</span><br/>I am a software engineer based in San Francisco</p>
+            <p className='about-part-one-text'><span className="about-part-one-text-title">I’m Ivy</span><br/>I am a software engineer based in San Francisco</p>
             <img className='about-part-one-image' src="images/bridge.png" alt="bridge-image" />
         </div>
         <div className='about-part-two'>
@@ -145,8 +180,10 @@ class About extends Component {
         </div>
         <div className='about-part-three'>
             <p className='about-part-three-text'>I design websites and t-shirts</p>
-            <img className='about-part-three-image-web' src="images/web.png" alt="web-image" />
-            <a href="https://www.ivytees.com/" className='about-part-three-image-tee-box'  target="_blank" ><img className='about-part-three-image-tee' src="images/tee.png" alt="tee-image" /></a>
+            <div className='about-part-three-images'>
+              <img className='about-part-three-image-web' src="images/web.png" alt="web-image" />
+              <a href="https://www.ivytees.com/" className='about-part-three-image-tee-box'  target="_blank" ><img className='about-part-three-image-tee' src="images/tee.png" alt="tee-image" /></a>
+            </div>
         </div>
         <div className='about-part-four' id='portfolio'>
             <p className='about-part-four-text'>My latest design project</p>
@@ -180,7 +217,7 @@ class About extends Component {
             <p className='about-part-eight-text-two'>Back to the top</p>
             <div className='about-part-eight-arrow' onClick={this.handleBottomArrowClick}></div>
         </div>
-            <canvas id="canvas" width="1300" height="2840">fall back</canvas>
+           {canvas}
       </div>
     );
   }

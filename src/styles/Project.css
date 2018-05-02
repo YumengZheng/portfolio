@@ -1,4 +1,4 @@
-@media screen and (min-width: 1240px){
+@media screen and (min-width: 1270px){
   .project-box{
     display: flex;
     flex-direction: column;
@@ -52,7 +52,7 @@
   }
 }
 
-@media (min-width: 730px) and (max-width: 1240px){
+@media (min-width: 730px) and (max-width: 1270px){
   .project-box{
     display: flex;
     flex-direction: column;

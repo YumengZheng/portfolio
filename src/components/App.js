@@ -6,6 +6,7 @@ import Nav from './Nav.js';
 import Home from './Home.js';
 import EmmaDesign from './EmmaDesign.js';
 import Mihaibao from './Mihaibao.js';
+import TravelBrite from './TravelBrite.js';
 
 const App = () => {
     return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route exact path='/' component={Home}/>
           <Route path='/emma'component={EmmaDesign}/>
           <Route path='/mihaibao' component={Mihaibao}/>
+          <Route path='/travelbrite' component={TravelBrite}/>
         </Switch>
       </div>
     )

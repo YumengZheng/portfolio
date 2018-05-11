@@ -25,8 +25,9 @@ class Nav extends Component {
   }
 
   showNavOptions(){
-    let url = window.location.pathname
-    if(url === '/'){
+    let url = window.location.href
+    let temp = url.split("/")
+    if(temp[4] === ''){
       return  <div className="nav-inner-box">
                 <span className="nav-option" onClick={this.handleAboutClick}>About</span>
                 <span className="nav-option" onClick={this.handleProjectsClick}>Projects</span>

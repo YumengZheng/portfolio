@@ -6,6 +6,7 @@ class EmmaDesign extends Component {
   constructor(props){
     super(props)
   }
+
   render() {
     const width = document.body.clientWidth 
     let height;
@@ -14,10 +15,8 @@ class EmmaDesign extends Component {
     } else if(500<width && width<=700){
       height = {height: width*3}
     } else if(0<=width && width<=500){
-      console.log('pass')
       height = {height: width*3.35}
     }
-console.log(width)
     return (
       <div className="emma-design" style={height}>
         <img src='./images/emma.png' className="emma-design-image"/>

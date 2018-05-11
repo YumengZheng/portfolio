@@ -177,8 +177,6 @@ class About extends Component {
       this.canvasPhone()
       canvas =  <canvas id="canvas"  width="800" height="4800">fall back</canvas>
     }
-    console.log('client',window.innerWidth )
-    console.log('client',document.body.clientWidth )
     let aboutStyle = {}
     if (width>=1240){
       aboutStyle = {
@@ -234,6 +232,7 @@ class About extends Component {
         <div className='about-part-two'>
           <p className='about-part-two-text' id='projects'>My latest coding projects</p>
           <div className="coding-projects-outter-box" >
+              <LastestProject url="http://localhost:3000/#/travelbrite/" image="images/travel-brite.png" name="TravelBrite" tech="Node.js, Express, MongoDB, PostgreSQL"/>
               <LastestProject url="http://ivyzheng.us/minesweeper/" image="images/minesweeper.png" name="Mine Sweeper Game" tech="React, Redux, Javascript, Html, Css"/>   
               <LastestProject url="http://pickawatermelon.com/" image="images/watermelon.png" name="Watermelon University" tech="Javascript, JQuery, Html, Css"/>
           </div>    

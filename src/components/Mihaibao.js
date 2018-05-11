@@ -49,7 +49,6 @@ class Mihaibao extends Component {
         lineHeight: '20px'
       }
     } 
-    console.log(width)
 
     return (
       <div className="mihaibao-design" style={height}>

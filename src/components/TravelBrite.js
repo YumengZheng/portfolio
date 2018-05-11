@@ -11,7 +11,7 @@ class TravelBrite extends Component {
     let height;
     if(width>1240){
       height = {
-        height: '1600px'
+        height: '800px'
       }
     } else if(700<=width && width<=1240){
       height = {
@@ -26,10 +26,11 @@ class TravelBrite extends Component {
         height: width*3
       }
     }
-console.log('ppppppp')
+
     return (
       <div className="travelbrite" style={height}>
-        <img src='./images/travel-brite.png' className=''/>
+        <div className='travelbrite-text-box'><p className='travelbrite-text'><span style={{fontSize:"2em", lineHeight: '40px'}}>TravelBrite</span> is a back-end project I worked on for a traveling website. With the goal of designing the back-end to function smoothly at web-scale, I started the project with seeding 10 million data in MongoDB and Postgres to test the most the suitable database. I then implemented Redis as well as connected Mongo pool to decrease the query time. I used New Relic and artillery.io to stress test my architecture at every step and deployed the project on AWS. </p></div>
+        <div className='travelbrite-image-box'><img src='./images/travel-brite-big1.png' className='travelbrite-image'/></div>
       </div>
     );
   }

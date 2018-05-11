@@ -1,4 +1,30 @@
 .travelbrite{
   width: 100%;
   border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.3em;
+    color:#55515B;
+}
+.travelbrite-text-box{
+  width: 35%;
+  display: flex;
+  margin: 5% 0 0 8%;
+  /* border: 1px solid red; */
+}
+.travelbrite-text{
+
+}
+.travelbrite-image-box{
+  width: 50%;
+  display: flex;
+  position: relative;
+  margin: 5% 5% 0 5%;
+  /* border: 1px solid red; */
+}
+.travelbrite-image{
+  max-width:100%;
+  object-fit: contain;
+  object-position: top;
+  display: block;
 }

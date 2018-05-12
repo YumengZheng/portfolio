@@ -96,43 +96,47 @@ class About extends Component {
             ctx.beginPath();
             ctx.setLineDash([5,5]);
 						ctx.moveTo(397,250);
-            ctx.lineTo(397,310);
-            ctx.moveTo(397,350);
-            ctx.lineTo(397,1320);
-            ctx.moveTo(397,1365);
-            ctx.lineTo(397,1400);
-            ctx.moveTo(180,1500);
-            ctx.lineTo(180,1400);
-            ctx.lineTo(614,1400);
-            ctx.lineTo(614,1500);
-            ctx.moveTo(180,1630);
+            ctx.lineTo(397,300);
+            ctx.moveTo(397,340);
+            ctx.lineTo(397,1670);
+
+            ctx.moveTo(240,1700);
             ctx.lineTo(180,1700);
+            ctx.lineTo(180,1780);
+            ctx.moveTo(560,1700);
             ctx.lineTo(614,1700);
-            ctx.lineTo(614,1630);
-            ctx.moveTo(397,1700);
-            ctx.lineTo(397,1750);
-            ctx.moveTo(397,1790);
-            ctx.lineTo(397,3230);
-            ctx.moveTo(397,3260);
-            ctx.lineTo(397,3710);
-            ctx.moveTo(397,3785);
-            ctx.lineTo(397,3830);
-            ctx.moveTo(180,3830);
-            ctx.lineTo(614,3830);
-            ctx.lineTo(614,4160);
-            ctx.lineTo(180,4160);
-            ctx.lineTo(180,3830);
-            ctx.moveTo(397,4160);
-            ctx.lineTo(397,4220);
+            ctx.lineTo(614,1780);
+
+            ctx.moveTo(180,1830);
+            ctx.lineTo(180,2000);
+            ctx.lineTo(614,2000);
+            ctx.lineTo(614,1830);
+            ctx.moveTo(397,2000);
+            ctx.lineTo(397,2050);
+            ctx.moveTo(397,2090);
+            ctx.lineTo(397,3390);
+            ctx.moveTo(397,3420);
+            ctx.lineTo(397,3880);
+            ctx.moveTo(397,3950);
+            ctx.lineTo(397,4010);
+
+            ctx.moveTo(180,4010);
+            ctx.lineTo(614,4010);
+            ctx.lineTo(614,4300);
+            ctx.lineTo(180,4300);
+            ctx.lineTo(180,4010);
+            
             ctx.moveTo(397,4300);
-            ctx.lineTo(397,4350);
-            ctx.moveTo(140,4350);
-            ctx.lineTo(654,4350);
-            ctx.lineTo(654,4640);
-            ctx.lineTo(140,4640);
-            ctx.lineTo(140,4350);
-            ctx.moveTo(397,4640);
-            ctx.lineTo(397,4740);
+            ctx.lineTo(397,4360);
+            ctx.moveTo(397,4430);
+            ctx.lineTo(397,4480);
+            ctx.moveTo(140,4480);
+            ctx.lineTo(654,4480);
+            ctx.lineTo(654,4800);
+            ctx.lineTo(140,4800);
+            ctx.lineTo(140,4480);
+            ctx.moveTo(397,4800);
+            ctx.lineTo(397,4880);
             ctx.stroke();	
           }
 				}
@@ -175,7 +179,7 @@ class About extends Component {
       canvas =  <canvas id="canvas" width="1300" height="2840">fall back</canvas>
     } else if (width<=700){
       this.canvasPhone()
-      canvas =  <canvas id="canvas"  width="800" height="4800">fall back</canvas>
+      canvas =  <canvas id="canvas"  width="800" height="4960">fall back</canvas>
     }
     let aboutStyle = {}
     if (width>=1240){
@@ -202,18 +206,19 @@ class About extends Component {
       aboutStyle = {
         fontSize: '0.8em',
         width: '100%',
-        height: width*6}
+        height: width*6.2}
     } else if (400<=width && width<500){
         aboutStyle = {
           fontSize: '0.7em',
           width: '100%',
-          height: width*6}
+          height: width*6.2}
     } else if (width<400){
         aboutStyle = {
           fontSize: '0.6em',
           width: '100%',
-          height: width*6}
+          height: width*6.2}
     }
+    console.log(width)
 
    let tvStyle = {
      backgroundImage: "url('images/tv.png')",
@@ -232,7 +237,7 @@ class About extends Component {
         <div className='about-part-two'>
           <p className='about-part-two-text' id='projects'>My latest coding projects</p>
           <div className="coding-projects-outter-box" >
-              <LastestProject url="http://localhost:3000/#/travelbrite/" image="images/travel-brite.png" name="TravelBrite" tech="Node.js, Express, MongoDB, PostgreSQL"/>
+              <LastestProject url="http://ivyzheng.us/#/travelbrite/" image="images/travel-brite.png" name="TravelBrite" tech="Node.js, Express, MongoDB, PostgreSQL"/>
               <LastestProject url="http://ivyzheng.us/minesweeper/" image="images/minesweeper.png" name="Mine Sweeper Game" tech="React, Redux, Javascript, Html, Css"/>   
               <LastestProject url="http://pickawatermelon.com/" image="images/watermelon.png" name="Watermelon University" tech="Javascript, JQuery, Html, Css"/>
           </div>    

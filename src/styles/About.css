@@ -397,9 +397,8 @@
   }
   
   .coding-projects-outter-box{
-    width: 75%;
-    height: 74%;
-    margin: 3% auto 0;
+    width: 100%;
+    margin: 4.5% auto 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -704,7 +703,7 @@
     }
     .about-part-one-text{
       width: 90%;
-      margin: 5% auto 0;
+      margin: 6% auto 0;
       text-align: center;
       /* border: 1px solid blue; */
     }
@@ -722,7 +721,7 @@
     /* part two */
     .about-part-two{
       width: 80%;
-      height: 22%;
+      height: 28.5%;
       display: flex;
       flex-direction: column;
       margin: 0 auto;
@@ -730,14 +729,14 @@
     }
     .about-part-two-text{
       display: block;
-      margin: 11% auto 0;
+      margin: 9% auto 0;
       /* border: 1px solid blue; */
     }
     
     .coding-projects-outter-box{
       width: 100%;
-      height: 85%;
-      margin: 7% auto 0;
+      height: 95%;
+      margin: 5% auto 0;
       display: flex;
       flex-direction: column;
       z-index: 100;
@@ -747,7 +746,7 @@
     /* part three */
     .about-part-three{
       width: 80%;
-      height: 8%;
+      height: 7.5%;
       display: flex;
       margin: 0 auto;
       flex-direction: column; 
@@ -758,7 +757,7 @@
       text-align: center;
       height: auto;
       display: block;
-      margin: 5% auto 0;
+      margin: 8.5% auto 0;
       /* border: 1px solid blue; */
     }
     .about-part-three-images{
@@ -767,7 +766,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      margin: 9% auto 0;
+      margin: 0 auto;
       /* border: 1px solid blue; */
     } 
     .about-part-three-image-web{
@@ -795,7 +794,7 @@
     /* part four */
     .about-part-four{
       width: 80%;
-      height: 31%;
+      height: 28.5%;
       display: flex;
       margin: 0 auto;
       flex-direction: column;
@@ -804,13 +803,13 @@
     .about-part-four-text{
       display: block;
       width: auto;
-      margin: 11% auto 0; 
+      margin: 9% auto 0; 
       /* border: 1px solid blue; */
     }
     .design-projects-outter-box{
       width: 100%;
-      height: 92%;
-      margin: 3.7% auto 0;
+      height: 90%;
+      margin: 3% auto 0;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -821,7 +820,7 @@
     /* part five */
     .about-part-five{
       width:80%;
-      height: 11%;
+      height: 9.5%;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -829,7 +828,7 @@
     }
     .about-part-five-tv-box{
       width: 78%;
-      margin: 17% auto 0;
+      margin: 6% auto 0;
       display: block;
       /* border: 1px solid blue; */
       z-index: 100;
@@ -845,7 +844,7 @@
     }
     .about-part-five-text-box{
       width: 60%;
-      margin: -71% auto 0;
+      margin: -69% auto 0;
       /* border: 1px solid blue;  */
     }
     .about-part-five-text{
@@ -872,7 +871,7 @@
       display: block;
       width: 80%;
       text-align: center;
-      margin: 3% auto 0;
+      margin: 6% auto 0;
       /* border: 1px solid blue; */
     }
     .about-part-six-image-box{
@@ -880,7 +879,7 @@
       width: 90%;
       display: flex;
       flex-direction: row;
-      margin: 16% auto 0;
+      margin: 12% auto 0;
       justify-content: space-between;
       /* border: 1px solid green; */
     }
@@ -907,7 +906,7 @@
     
     .about-part-seven-text{
       width: 80%;
-      margin: 15% auto 0;
+      margin: 13% auto 0;
       text-align: center;
       /* border: 1px solid blue; */
     
@@ -916,7 +915,7 @@
       width: 100%;
       display: flex;
       height: auto;
-      margin: 10% auto auto;
+      margin: 7% auto auto;
       flex-direction: row;
       justify-content: space-between;
       /* border: 1px solid blue; */

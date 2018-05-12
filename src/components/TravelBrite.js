@@ -8,7 +8,7 @@ class TravelBrite extends Component {
   }
   render() {
     const width = document.body.clientWidth 
-    console.log(width)
+    
     let height;
     if(width>1240){
       height = {

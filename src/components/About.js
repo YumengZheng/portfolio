@@ -263,7 +263,7 @@ class About extends Component {
             <img className='about-part-five-image-dance' src="images/dance.png" alt="dance-image" />
         </div>
         <div className='about-part-six'>
-            <p className='about-part-six-text'>I am an expert at eatting Chinese food <br/>and playing Exploding Kittens</p>
+            <p className='about-part-six-text'>I am an expert at eating Chinese food <br/>and playing Exploding Kittens</p>
             <div className='about-part-six-image-box'>
               <img className='about-part-six-image-game' src="images/game.png" alt="game-image" />
               <img className='about-part-six-image-food' src="images/food.png" alt="food-image" />

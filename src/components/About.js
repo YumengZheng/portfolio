@@ -218,7 +218,6 @@ class About extends Component {
           width: '100%',
           height: width*6.2}
     }
-    console.log(width)
 
    let tvStyle = {
      backgroundImage: "url('images/tv.png')",

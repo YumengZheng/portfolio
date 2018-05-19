@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import '../styles/Banner.css';
 import $ from "jquery";
 import CodingChart from "./CodingChart.js";
+import { connect } from 'react-redux';
 
 class BannerRight extends Component {
   constructor(props){
@@ -87,4 +88,20 @@ class BannerRight extends Component {
   }
 }
 
-export default BannerRight
+var mapStateToProps = (state) => ({
+  rightBannerClass: state.rightBannerClass,
+  rightImageClass: state.rightImageClass,
+  rightShowChart: state.rightShowChart,
+  rightShowBackground: state.rightShowBackground
+});
+
+var mapDispatchToProps = (dispatch) => ({
+
+});
+
+var BannerRightContainer = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(BannerRight);
+
+export default BannerRightContainer;

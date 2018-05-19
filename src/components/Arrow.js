@@ -1,6 +1,7 @@
 /* eslint-disable */
 import React, { Component } from "react";
 import '../styles/Arrow.css';
+import { connect } from 'react-redux';
 
 class Arrow extends Component {
   constructor(props){
@@ -39,4 +40,18 @@ class Arrow extends Component {
   }
 }
 
-export default Arrow
+var mapStateToProps = (state) => ({
+  leftShowArrow: state.leftShowArrow,
+  rightShowArrow: state.rightShowArrow
+});
+
+var mapDispatchToProps = (dispatch) => ({
+
+});
+
+var ArrowContainer = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Arrow);
+
+export default ArrowContainer;

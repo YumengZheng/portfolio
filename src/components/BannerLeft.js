@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import '../styles/Banner.css';
 import $ from 'jquery';
 import DesignChart from './DesignChart.js';
+import { connect } from 'react-redux';
 
 class BannerLeft extends Component {
   constructor(props){
@@ -98,4 +99,21 @@ class BannerLeft extends Component {
   }
 }
 
-export default BannerLeft;
+var mapStateToProps = (state) => ({
+  leftBannerClass: state.leftBannerClass,
+  leftImageClass: state.leftImageClass,
+  leftShowChart: state.leftShowChart,
+  leftShowBackground: state.leftShowBackground
+});
+
+var mapDispatchToProps = (dispatch) => ({
+
+});
+
+var BannerLeftContainer = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(BannerLeft);
+
+export default BannerLeftContainer;
+

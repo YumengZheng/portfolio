@@ -3,15 +3,13 @@ import React, { Component } from "react";
 import '../styles/Banner.css';
 import $ from "jquery";
 import CodingChart from "./CodingChart.js";
+import store from '../redux/store.js';
+import actions from '../redux/actions/banner-right-action'
 import { connect } from 'react-redux';
 
 class BannerRight extends Component {
   constructor(props){
     super(props)
-    this.state = {
-      clickHandleOn: true,
-      onHover: false
-    }
     this.handleClick = this.handleClick.bind(this)
     this.handleMouseEnter = this.handleMouseEnter.bind(this)
     this.handleMouseLeave = this.handleMouseLeave.bind(this)
@@ -19,27 +17,23 @@ class BannerRight extends Component {
   }
 
   handleClick() {
-    if(this.state.clickHandleOn){
-    this.props.showRightChartPage()
-    this.setState({clickHandleOn:false})
+    if(this.props.rightClickHandleOn){
+      store.dispatch(actions.changeRightClickHandleOn(false))
+      this.props.showRightChartPage()
     }
   }
 
   handleMouseEnter(){
-    this.setState({
-      onHover: true
-    })
+    store.dispatch(actions.changeRightOnHover(true))
   }
 
   handleMouseLeave(){
-    this.setState({
-      onHover: false
-    })
+    store.dispatch(actions.changeRightOnHover(false))
   }
 
   controlToolTip(){
     let toolTip
-    this.state.onHover? toolTip = 'tooltip-right': toolTip = 'tooltip-none'
+    this.props.rightOnHover? toolTip = 'tooltip-right': toolTip = 'tooltip-none'
     return <div id='tooltip2' className= {toolTip}><span className='inner-box'>Click to see coding skills</span></div>
   }
   
@@ -65,11 +59,11 @@ class BannerRight extends Component {
       $('#programmer').fadeOut(1000)
     }
     let findTooltipPosition
-    if(this.state.onHover){
+    if(this.props.rightOnHover){
       findTooltipPosition = this.findTooltipPosition()
     }
     let fontColor
-    this.state.onHover? fontColor = {color: 'white', position: 'absolute'} : fontColor = {color: 'rgb(71, 70, 71)'}
+    this.props.rightOnHover? fontColor = {color: 'white', position: 'absolute'} : fontColor = {color: 'rgb(71, 70, 71)'}
     return (
       <div className={this.props.rightBannerClass} 
            onClick={this.handleClick}
@@ -89,6 +83,8 @@ class BannerRight extends Component {
 }
 
 var mapStateToProps = (state) => ({
+  rightClickHandleOn:state.rightClickHandleOn,
+  rightOnHover: state.rightOnHover,
   rightBannerClass: state.rightBannerClass,
   rightImageClass: state.rightImageClass,
   rightShowChart: state.rightShowChart,

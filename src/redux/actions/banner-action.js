@@ -79,7 +79,7 @@ const changeRightArrow = (newClass) => {
     }
 }
 const changeShowArrow = (newClass) => {
-  console.log('action 4',newClass)
+  // console.log('action 4',newClass)
   return {
     type: 'CHANGE_ARROW_STATUS',
     newClass: newClass

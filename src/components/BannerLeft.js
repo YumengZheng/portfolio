@@ -4,14 +4,12 @@ import '../styles/Banner.css';
 import $ from 'jquery';
 import DesignChart from './DesignChart.js';
 import { connect } from 'react-redux';
+import store from '../redux/store.js';
+import actions from '../redux/actions/banner-left-action'
 
 class BannerLeft extends Component {
   constructor(props){
     super(props)
-    this.state = {
-      clickHandleOn: true,
-      onHover: false
-    }
     this.handleClick = this.handleClick.bind(this)
     this.handleMouseEnter = this.handleMouseEnter.bind(this)
     this.handleMouseLeave = this.handleMouseLeave.bind(this)
@@ -20,28 +18,24 @@ class BannerLeft extends Component {
   }
 
   handleClick() {
-    if(this.state.clickHandleOn){
+    if(this.props.clickHandleOn){
+      store.dispatch(actions.changeClickHandleOn(false))
       this.props.showLeftChartPage()
-      this.setState({clickHandleOn:false})
       }
   }
 
   handleMouseEnter(){
-    this.setState({
-      onHover: true
-    })
+    store.dispatch(actions.changeOnHover(true))
   }
 
   handleMouseLeave(){
-    this.setState({
-      onHover: false
-    })
+    store.dispatch(actions.changeOnHover(false))
   }
 
   constrolBackground(){
     let background
     let fontColor
-    this.state.onHover? fontColor = {color: 'white', position: 'absolute'} : fontColor = {color: 'rgb(71, 70, 71)'}
+    this.props.onHover? fontColor = {color: 'white', position: 'absolute'} : fontColor = {color: 'rgb(71, 70, 71)'}
     if(this.props.leftShowBackground){
       background =[<span id="designer" style={fontColor} className="word">Designer</span>,
                   <img src="images/ps.png" alt="ps" id="ps" className="image"></img>,
@@ -53,7 +47,7 @@ class BannerLeft extends Component {
 
   controlToolTip(){
     let toolTip
-    this.state.onHover? toolTip = 'tooltip-left': toolTip = 'tooltip-none'
+    this.props.onHover? toolTip = 'tooltip-left': toolTip = 'tooltip-none'
     return <div id='tooltip' className= {toolTip} ><span className='inner-box'>Click to see design skills</span></div>
   }
 
@@ -79,7 +73,7 @@ class BannerLeft extends Component {
       $('#designer').fadeOut(1500)
     }
     let findTooltipPosition
-    if(this.state.onHover){
+    if(this.props.onHover){
       findTooltipPosition = this.findTooltipPosition()
     }
 
@@ -100,6 +94,8 @@ class BannerLeft extends Component {
 }
 
 var mapStateToProps = (state) => ({
+  clickHandleOn: state.clickHandleOn,
+  onHover: state.onHover,
   leftBannerClass: state.leftBannerClass,
   leftImageClass: state.leftImageClass,
   leftShowChart: state.leftShowChart,

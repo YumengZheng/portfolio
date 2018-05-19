@@ -91,7 +91,7 @@ const rightShowArrow = (state = false, action) => {
   }
 };
 const showArrow = (state = false, action) => {
-  console.log('reducer a', action.newClass)
+  // console.log('reducer a', action.newClass)
   switch (action.type) {
   case 'CHANGE_ARROW_STATUS':
     return action.newClass || null;

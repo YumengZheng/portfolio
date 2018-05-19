@@ -6,7 +6,7 @@ import BannerLeftContainer from './BannerLeft.js';
 import BannerRightContainer from './BannerRight.js';
 import $ from 'jquery';
 import store from '../redux/store.js';
-import actions from '../redux/actions/banner-actions'
+import actions from '../redux/actions/banner-action'
 import { connect } from 'react-redux';
 
 

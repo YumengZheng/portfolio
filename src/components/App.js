@@ -7,6 +7,7 @@ import Home from './Home.js';
 import EmmaDesign from './EmmaDesign.js';
 import Mihaibao from './Mihaibao.js';
 import TravelBrite from './TravelBrite.js';
+import Hero from './Hero.js';
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
           <Route path='/emma'component={EmmaDesign}/>
           <Route path='/mihaibao' component={Mihaibao}/>
           <Route path='/travelbrite' component={TravelBrite}/>
+          <Route path='/hero' component={Hero}/>
         </Switch>
       </div>
     )

@@ -236,8 +236,9 @@ class About extends Component {
         <div className='about-part-two'>
           <p className='about-part-two-text' id='projects'>My latest coding projects</p>
           <div className="coding-projects-outter-box" >
-              <LastestProject url="http://ivyzheng.us/#/travelbrite/" image="images/travel-brite.png" name="TravelBrite" tech="Node.js, Express, MongoDB, PostgreSQL"/>
-              <LastestProject url="http://ivyzheng.us/minesweeper/" image="images/minesweeper.png" name="Mine Sweeper Game" tech="React, Redux, Javascript, Html, Css"/>   
+              {/* <LastestProject url="http://ivyzheng.us/#/travelbrite/" image="images/travel-brite.png" name="TravelBrite" tech="Node.js, Express, MongoDB, PostgreSQL"/> */}
+              <LastestProject url="http://localhost:3000/#/hero/" image="images/hero.png" name="Hero" tech="React, Redux, Javascript, WebSocket, Html, Css"/>
+              <LastestProject url="http://ivyzheng.us/minesweeper/" image="images/minesweeper.png" name="Mine Sweeper Game" tech="React, Redux, Javascript, Html, Css"/>
               <LastestProject url="http://pickawatermelon.com/" image="images/watermelon.png" name="Watermelon University" tech="Javascript, JQuery, Html, Css"/>
           </div>    
         </div>
